@@ -1,0 +1,2029 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>fuse-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">fuse-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >InventoryService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_brands" >_brands</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_categories" >_categories</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_pagination" >_pagination</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_product" >_product</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_products" >_products</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_tags" >_tags</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_vendors" >_vendors</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createProduct" >createProduct</a>
+                            </li>
+                            <li>
+                                <a href="#createTag" >createTag</a>
+                            </li>
+                            <li>
+                                <a href="#deleteProduct" >deleteProduct</a>
+                            </li>
+                            <li>
+                                <a href="#deleteTag" >deleteTag</a>
+                            </li>
+                            <li>
+                                <a href="#getBrands" >getBrands</a>
+                            </li>
+                            <li>
+                                <a href="#getCategories" >getCategories</a>
+                            </li>
+                            <li>
+                                <a href="#getProductById" >getProductById</a>
+                            </li>
+                            <li>
+                                <a href="#getProducts" >getProducts</a>
+                            </li>
+                            <li>
+                                <a href="#getTags" >getTags</a>
+                            </li>
+                            <li>
+                                <a href="#getVendors" >getVendors</a>
+                            </li>
+                            <li>
+                                <a href="#updateProduct" >updateProduct</a>
+                            </li>
+                            <li>
+                                <a href="#updateTag" >updateTag</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#brands$" >brands$</a>
+                                </li>
+                                <li>
+                                    <a href="#categories$" >categories$</a>
+                                </li>
+                                <li>
+                                    <a href="#pagination$" >pagination$</a>
+                                </li>
+                                <li>
+                                    <a href="#product$" >product$</a>
+                                </li>
+                                <li>
+                                    <a href="#products$" >products$</a>
+                                </li>
+                                <li>
+                                    <a href="#tags$" >tags$</a>
+                                </li>
+                                <li>
+                                    <a href="#vendors$" >vendors$</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_httpClient: <a href="../interfaces/Client.html" target="_self">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Client.html" target="_self" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createProduct"></a>
+                    <span class="name">
+                        <span ><b>createProduct</b></span>
+                        <a href="#createProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createProduct()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create product</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >Observable&lt;InventoryProduct&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createTag"></a>
+                    <span class="name">
+                        <span ><b>createTag</b></span>
+                        <a href="#createTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createTag(tag: <a href="../interfaces/InventoryTag.html" target="_self">InventoryTag</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create tag</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tag</td>
+                                    <td>
+                                                <code><a href="../interfaces/InventoryTag.html" target="_self" >InventoryTag</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;InventoryTag&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteProduct"></a>
+                    <span class="name">
+                        <span ><b>deleteProduct</b></span>
+                        <a href="#deleteProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteProduct(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the product</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteTag"></a>
+                    <span class="name">
+                        <span ><b>deleteTag</b></span>
+                        <a href="#deleteTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteTag(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="337"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:337</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the tag</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBrands"></a>
+                    <span class="name">
+                        <span ><b>getBrands</b></span>
+                        <a href="#getBrands"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBrands()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get brands</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/InventoryBrand.html" target="_self" >Observable&lt;InventoryBrand[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCategories"></a>
+                    <span class="name">
+                        <span ><b>getCategories</b></span>
+                        <a href="#getCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCategories()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get categories</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;InventoryCategory[]&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProductById"></a>
+                    <span class="name">
+                        <span ><b>getProductById</b></span>
+                        <a href="#getProductById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProductById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get product by id</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >Observable&lt;InventoryProduct&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProducts"></a>
+                    <span class="name">
+                        <span ><b>getProducts</b></span>
+                        <a href="#getProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProducts(page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, size: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, sort: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, order: "asc" | "desc" | string, search: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get products</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>size</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>10</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>sort</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;name&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                            <code>&quot;asc&quot; | &quot;desc&quot; | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;asc&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>search</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;&#x27;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;literal type&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTags"></a>
+                    <span class="name">
+                        <span ><b>getTags</b></span>
+                        <a href="#getTags"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTags()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="269"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:269</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get tags</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;InventoryTag[]&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getVendors"></a>
+                    <span class="name">
+                        <span ><b>getVendors</b></span>
+                        <a href="#getVendors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getVendors()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="384"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:384</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get vendors</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/InventoryVendor.html" target="_self" >Observable&lt;InventoryVendor[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateProduct"></a>
+                    <span class="name">
+                        <span ><b>updateProduct</b></span>
+                        <a href="#updateProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateProduct(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, product: <a href="../interfaces/InventoryProduct.html" target="_self">InventoryProduct</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update product</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../interfaces/InventoryProduct.html" target="_self" >InventoryProduct</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >Observable&lt;InventoryProduct&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateTag"></a>
+                    <span class="name">
+                        <span ><b>updateTag</b></span>
+                        <a href="#updateTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateTag(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, tag: <a href="../interfaces/InventoryTag.html" target="_self">InventoryTag</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="306"
+                            class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:306</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the tag</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tag</td>
+                                    <td>
+                                                <code><a href="../interfaces/InventoryTag.html" target="_self" >InventoryTag</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;InventoryTag&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_brands"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_brands</b></span>
+                        <a href="#_brands"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_categories"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_categories</b></span>
+                        <a href="#_categories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_pagination"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_pagination</b></span>
+                        <a href="#_pagination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InventoryPagination.html" target="_self" >BehaviorSubject&lt;InventoryPagination | null&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_product"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_product</b></span>
+                        <a href="#_product"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >BehaviorSubject&lt;InventoryProduct | null&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_products"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_products</b></span>
+                        <a href="#_products"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_tags"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_tags</b></span>
+                        <a href="#_tags"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_vendors"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_vendors</b></span>
+                        <a href="#_vendors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="brands$"></a>
+                        <span class="name"><b>brands$</b><a href="#brands$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>brands$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:34</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for brands</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/InventoryBrand.html" target="_self" >Observable&lt;InventoryBrand[]&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categories$"></a>
+                        <span class="name"><b>categories$</b><a href="#categories$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>categories$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:42</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for categories</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>Observable&lt;InventoryCategory[]&gt;</code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pagination$"></a>
+                        <span class="name"><b>pagination$</b><a href="#pagination$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pagination$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:50</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for pagination</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/InventoryPagination.html" target="_self" >Observable&lt;InventoryPagination&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="product$"></a>
+                        <span class="name"><b>product$</b><a href="#product$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>product$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:58</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for product</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >Observable&lt;InventoryProduct&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="products$"></a>
+                        <span class="name"><b>products$</b><a href="#products$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>products$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:66</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for products</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/InventoryProduct.html" target="_self" >Observable&lt;InventoryProduct[]&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tags$"></a>
+                        <span class="name"><b>tags$</b><a href="#tags$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>tags$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:74</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for tags</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>Observable&lt;InventoryTag[]&gt;</code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="vendors$"></a>
+                        <span class="name"><b>vendors$</b><a href="#vendors$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>vendors$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/modules/admin/apps/ecommerce/inventory/inventory.service.ts:82</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for vendors</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/InventoryVendor.html" target="_self" >Observable&lt;InventoryVendor[]&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { BehaviorSubject, filter, map, Observable, of, switchMap, take, tap, throwError } from &#x27;rxjs&#x27;;
+import { InventoryBrand, InventoryCategory, InventoryPagination, InventoryProduct, InventoryTag, InventoryVendor } from &#x27;app/modules/admin/apps/ecommerce/inventory/inventory.types&#x27;;
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class InventoryService
+{
+    // Private
+    private _brands: BehaviorSubject&lt;InventoryBrand[] | null&gt; &#x3D; new BehaviorSubject(null);
+    private _categories: BehaviorSubject&lt;InventoryCategory[] | null&gt; &#x3D; new BehaviorSubject(null);
+    private _pagination: BehaviorSubject&lt;InventoryPagination | null&gt; &#x3D; new BehaviorSubject(null);
+    private _product: BehaviorSubject&lt;InventoryProduct | null&gt; &#x3D; new BehaviorSubject(null);
+    private _products: BehaviorSubject&lt;InventoryProduct[] | null&gt; &#x3D; new BehaviorSubject(null);
+    private _tags: BehaviorSubject&lt;InventoryTag[] | null&gt; &#x3D; new BehaviorSubject(null);
+    private _vendors: BehaviorSubject&lt;InventoryVendor[] | null&gt; &#x3D; new BehaviorSubject(null);
+
+    /**
+     * Constructor
+     */
+    constructor(private _httpClient: HttpClient)
+    {
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Accessors
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Getter for brands
+     */
+    get brands$(): Observable&lt;InventoryBrand[]&gt;
+    {
+        return this._brands.asObservable();
+    }
+
+    /**
+     * Getter for categories
+     */
+    get categories$(): Observable&lt;InventoryCategory[]&gt;
+    {
+        return this._categories.asObservable();
+    }
+
+    /**
+     * Getter for pagination
+     */
+    get pagination$(): Observable&lt;InventoryPagination&gt;
+    {
+        return this._pagination.asObservable();
+    }
+
+    /**
+     * Getter for product
+     */
+    get product$(): Observable&lt;InventoryProduct&gt;
+    {
+        return this._product.asObservable();
+    }
+
+    /**
+     * Getter for products
+     */
+    get products$(): Observable&lt;InventoryProduct[]&gt;
+    {
+        return this._products.asObservable();
+    }
+
+    /**
+     * Getter for tags
+     */
+    get tags$(): Observable&lt;InventoryTag[]&gt;
+    {
+        return this._tags.asObservable();
+    }
+
+    /**
+     * Getter for vendors
+     */
+    get vendors$(): Observable&lt;InventoryVendor[]&gt;
+    {
+        return this._vendors.asObservable();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Get brands
+     */
+    getBrands(): Observable&lt;InventoryBrand[]&gt;
+    {
+        return this._httpClient.get&lt;InventoryBrand[]&gt;(&#x27;api/apps/ecommerce/inventory/brands&#x27;).pipe(
+            tap((brands) &#x3D;&gt; {
+                this._brands.next(brands);
+            })
+        );
+    }
+
+    /**
+     * Get categories
+     */
+    getCategories(): Observable&lt;InventoryCategory[]&gt;
+    {
+        return this._httpClient.get&lt;InventoryCategory[]&gt;(&#x27;api/apps/ecommerce/inventory/categories&#x27;).pipe(
+            tap((categories) &#x3D;&gt; {
+                this._categories.next(categories);
+            })
+        );
+    }
+
+    /**
+     * Get products
+     *
+     *
+     * @param page
+     * @param size
+     * @param sort
+     * @param order
+     * @param search
+     */
+    getProducts(page: number &#x3D; 0, size: number &#x3D; 10, sort: string &#x3D; &#x27;name&#x27;, order: &#x27;asc&#x27; | &#x27;desc&#x27; | &#x27;&#x27; &#x3D; &#x27;asc&#x27;, search: string &#x3D; &#x27;&#x27;):
+        Observable&lt;{ pagination: InventoryPagination; products: InventoryProduct[] }&gt;
+    {
+        return this._httpClient.get&lt;{ pagination: InventoryPagination; products: InventoryProduct[] }&gt;(&#x27;api/apps/ecommerce/inventory/products&#x27;, {
+            params: {
+                page: &#x27;&#x27; + page,
+                size: &#x27;&#x27; + size,
+                sort,
+                order,
+                search
+            }
+        }).pipe(
+            tap((response) &#x3D;&gt; {
+                this._pagination.next(response.pagination);
+                this._products.next(response.products);
+            })
+        );
+    }
+
+    /**
+     * Get product by id
+     */
+    getProductById(id: string): Observable&lt;InventoryProduct&gt;
+    {
+        return this._products.pipe(
+            take(1),
+            map((products) &#x3D;&gt; {
+
+                // Find the product
+                const product &#x3D; products.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id) || null;
+
+                // Update the product
+                this._product.next(product);
+
+                // Return the product
+                return product;
+            }),
+            switchMap((product) &#x3D;&gt; {
+
+                if ( !product )
+                {
+                    return throwError(&#x27;Could not found product with id of &#x27; + id + &#x27;!&#x27;);
+                }
+
+                return of(product);
+            })
+        );
+    }
+
+    /**
+     * Create product
+     */
+    createProduct(): Observable&lt;InventoryProduct&gt;
+    {
+        return this.products$.pipe(
+            take(1),
+            switchMap(products &#x3D;&gt; this._httpClient.post&lt;InventoryProduct&gt;(&#x27;api/apps/ecommerce/inventory/product&#x27;, {}).pipe(
+                map((newProduct) &#x3D;&gt; {
+
+                    // Update the products with the new product
+                    this._products.next([newProduct, ...products]);
+
+                    // Return the new product
+                    return newProduct;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update product
+     *
+     * @param id
+     * @param product
+     */
+    updateProduct(id: string, product: InventoryProduct): Observable&lt;InventoryProduct&gt;
+    {
+        return this.products$.pipe(
+            take(1),
+            switchMap(products &#x3D;&gt; this._httpClient.patch&lt;InventoryProduct&gt;(&#x27;api/apps/ecommerce/inventory/product&#x27;, {
+                id,
+                product
+            }).pipe(
+                map((updatedProduct) &#x3D;&gt; {
+
+                    // Find the index of the updated product
+                    const index &#x3D; products.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Update the product
+                    products[index] &#x3D; updatedProduct;
+
+                    // Update the products
+                    this._products.next(products);
+
+                    // Return the updated product
+                    return updatedProduct;
+                }),
+                switchMap(updatedProduct &#x3D;&gt; this.product$.pipe(
+                    take(1),
+                    filter(item &#x3D;&gt; item &amp;&amp; item.id &#x3D;&#x3D;&#x3D; id),
+                    tap(() &#x3D;&gt; {
+
+                        // Update the product if it&#x27;s selected
+                        this._product.next(updatedProduct);
+
+                        // Return the updated product
+                        return updatedProduct;
+                    })
+                ))
+            ))
+        );
+    }
+
+    /**
+     * Delete the product
+     *
+     * @param id
+     */
+    deleteProduct(id: string): Observable&lt;boolean&gt;
+    {
+        return this.products$.pipe(
+            take(1),
+            switchMap(products &#x3D;&gt; this._httpClient.delete(&#x27;api/apps/ecommerce/inventory/product&#x27;, {params: {id}}).pipe(
+                map((isDeleted: boolean) &#x3D;&gt; {
+
+                    // Find the index of the deleted product
+                    const index &#x3D; products.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Delete the product
+                    products.splice(index, 1);
+
+                    // Update the products
+                    this._products.next(products);
+
+                    // Return the deleted status
+                    return isDeleted;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Get tags
+     */
+    getTags(): Observable&lt;InventoryTag[]&gt;
+    {
+        return this._httpClient.get&lt;InventoryTag[]&gt;(&#x27;api/apps/ecommerce/inventory/tags&#x27;).pipe(
+            tap((tags) &#x3D;&gt; {
+                this._tags.next(tags);
+            })
+        );
+    }
+
+    /**
+     * Create tag
+     *
+     * @param tag
+     */
+    createTag(tag: InventoryTag): Observable&lt;InventoryTag&gt;
+    {
+        return this.tags$.pipe(
+            take(1),
+            switchMap(tags &#x3D;&gt; this._httpClient.post&lt;InventoryTag&gt;(&#x27;api/apps/ecommerce/inventory/tag&#x27;, {tag}).pipe(
+                map((newTag) &#x3D;&gt; {
+
+                    // Update the tags with the new tag
+                    this._tags.next([...tags, newTag]);
+
+                    // Return new tag from observable
+                    return newTag;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update the tag
+     *
+     * @param id
+     * @param tag
+     */
+    updateTag(id: string, tag: InventoryTag): Observable&lt;InventoryTag&gt;
+    {
+        return this.tags$.pipe(
+            take(1),
+            switchMap(tags &#x3D;&gt; this._httpClient.patch&lt;InventoryTag&gt;(&#x27;api/apps/ecommerce/inventory/tag&#x27;, {
+                id,
+                tag
+            }).pipe(
+                map((updatedTag) &#x3D;&gt; {
+
+                    // Find the index of the updated tag
+                    const index &#x3D; tags.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Update the tag
+                    tags[index] &#x3D; updatedTag;
+
+                    // Update the tags
+                    this._tags.next(tags);
+
+                    // Return the updated tag
+                    return updatedTag;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Delete the tag
+     *
+     * @param id
+     */
+    deleteTag(id: string): Observable&lt;boolean&gt;
+    {
+        return this.tags$.pipe(
+            take(1),
+            switchMap(tags &#x3D;&gt; this._httpClient.delete(&#x27;api/apps/ecommerce/inventory/tag&#x27;, {params: {id}}).pipe(
+                map((isDeleted: boolean) &#x3D;&gt; {
+
+                    // Find the index of the deleted tag
+                    const index &#x3D; tags.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Delete the tag
+                    tags.splice(index, 1);
+
+                    // Update the tags
+                    this._tags.next(tags);
+
+                    // Return the deleted status
+                    return isDeleted;
+                }),
+                filter(isDeleted &#x3D;&gt; isDeleted),
+                switchMap(isDeleted &#x3D;&gt; this.products$.pipe(
+                    take(1),
+                    map((products) &#x3D;&gt; {
+
+                        // Iterate through the contacts
+                        products.forEach((product) &#x3D;&gt; {
+
+                            const tagIndex &#x3D; product.tags.findIndex(tag &#x3D;&gt; tag &#x3D;&#x3D;&#x3D; id);
+
+                            // If the contact has the tag, remove it
+                            if ( tagIndex &gt; -1 )
+                            {
+                                product.tags.splice(tagIndex, 1);
+                            }
+                        });
+
+                        // Return the deleted status
+                        return isDeleted;
+                    })
+                ))
+            ))
+        );
+    }
+
+    /**
+     * Get vendors
+     */
+    getVendors(): Observable&lt;InventoryVendor[]&gt;
+    {
+        return this._httpClient.get&lt;InventoryVendor[]&gt;(&#x27;api/apps/ecommerce/inventory/vendors&#x27;).pipe(
+            tap((vendors) &#x3D;&gt; {
+                this._vendors.next(vendors);
+            })
+        );
+    }
+
+    /**
+     * Update the avatar of the given contact
+     *
+     * @param id
+     * @param avatar
+     */
+    /*uploadAvatar(id: string, avatar: File): Observable&lt;Contact&gt;
+    {
+        return this.contacts$.pipe(
+            take(1),
+            switchMap(contacts &#x3D;&gt; this._httpClient.post&lt;Contact&gt;(&#x27;api/apps/contacts/avatar&#x27;, {
+                id,
+                avatar
+            }, {
+                headers: {
+                    &#x27;Content-Type&#x27;: avatar.type
+                }
+            }).pipe(
+                map((updatedContact) &#x3D;&gt; {
+
+                    // Find the index of the updated contact
+                    const index &#x3D; contacts.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Update the contact
+                    contacts[index] &#x3D; updatedContact;
+
+                    // Update the contacts
+                    this._contacts.next(contacts);
+
+                    // Return the updated contact
+                    return updatedContact;
+                }),
+                switchMap(updatedContact &#x3D;&gt; this.contact$.pipe(
+                    take(1),
+                    filter(item &#x3D;&gt; item &amp;&amp; item.id &#x3D;&#x3D;&#x3D; id),
+                    tap(() &#x3D;&gt; {
+
+                        // Update the contact if it&#x27;s selected
+                        this._contact.next(updatedContact);
+
+                        // Return the updated contact
+                        return updatedContact;
+                    })
+                ))
+            ))
+        );
+    }*/
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'InventoryService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

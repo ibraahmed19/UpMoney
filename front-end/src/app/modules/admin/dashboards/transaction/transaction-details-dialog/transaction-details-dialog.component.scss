@@ -1,0 +1,41 @@
+/* transaction-details-dialog.component.scss */
+
+/* Center and style the dialog title */
+.mat-dialog-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; /* Center the title */
+    margin: 16px 0; /* Add margin for spacing */
+  }
+  
+  /* Style for the table */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  td:first-child {
+    font-weight: bold; /* Make the first column bold */
+  }
+  
+  /* Style for the close button */
+  .mat-dialog-actions {
+    justify-content: flex-end;
+  }
+
+  .title-container {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }

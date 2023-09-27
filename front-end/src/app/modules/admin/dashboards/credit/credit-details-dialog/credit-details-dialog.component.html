@@ -1,0 +1,26 @@
+<h3 mat-dialog-title class="title-container">Credit Details</h3>
+<mat-dialog-content>
+  <div class="table-container">
+    <table class="w-full">
+      <tr>
+        <td>Start Date</td>
+        <td>{{ data.start_date }}</td>
+      </tr>
+      <tr>
+        <td>End Date</td>
+        <td>{{ data.end_date }}</td>
+      </tr>
+      <tr>
+        <td>Monthly Payments</td>
+        <td>{{ data.monthly_payments }}</td>
+      </tr>
+      <tr>
+        <td>Comments</td>
+        <td>{{ data.comments }}</td>
+      </tr>
+    </table>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>

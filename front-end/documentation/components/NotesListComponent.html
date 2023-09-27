@@ -1,0 +1,1744 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>fuse-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">fuse-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  NotesListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/admin/apps/notes/list/list.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>notes-list</code></td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_unsubscribeAll" >_unsubscribeAll</a>
+                            </li>
+                            <li>
+                                <a href="#drawerMode" >drawerMode</a>
+                            </li>
+                            <li>
+                                <a href="#drawerOpened" >drawerOpened</a>
+                            </li>
+                            <li>
+                                <a href="#filter$" >filter$</a>
+                            </li>
+                            <li>
+                                <a href="#labels$" >labels$</a>
+                            </li>
+                            <li>
+                                <a href="#masonryColumns" >masonryColumns</a>
+                            </li>
+                            <li>
+                                <a href="#notes$" >notes$</a>
+                            </li>
+                            <li>
+                                <a href="#searchQuery$" >searchQuery$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addNewNote" >addNewNote</a>
+                            </li>
+                            <li>
+                                <a href="#filterByArchived" >filterByArchived</a>
+                            </li>
+                            <li>
+                                <a href="#filterByLabel" >filterByLabel</a>
+                            </li>
+                            <li>
+                                <a href="#filterByQuery" >filterByQuery</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openEditLabelsDialog" >openEditLabelsDialog</a>
+                            </li>
+                            <li>
+                                <a href="#openNoteDialog" >openNoteDialog</a>
+                            </li>
+                            <li>
+                                <a href="#resetFilter" >resetFilter</a>
+                            </li>
+                            <li>
+                                <a href="#trackByFn" >trackByFn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#filterStatus" >filterStatus</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_changeDetectorRef: ChangeDetectorRef, _fuseMediaWatcherService: <a href="../injectables/FuseMediaWatcherService.html" target="_self">FuseMediaWatcherService</a>, _matDialog: MatDialog, _notesService: <a href="../injectables/NotesService.html" target="_self">NotesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_changeDetectorRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_fuseMediaWatcherService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FuseMediaWatcherService.html" target="_self" >FuseMediaWatcherService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_matDialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_notesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NotesService.html" target="_self" >NotesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addNewNote"></a>
+                    <span class="name">
+                        <span ><b>addNewNote</b></span>
+                        <a href="#addNewNote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addNewNote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add a new note</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterByArchived"></a>
+                    <span class="name">
+                        <span ><b>filterByArchived</b></span>
+                        <a href="#filterByArchived"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterByArchived()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Filter by archived</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterByLabel"></a>
+                    <span class="name">
+                        <span ><b>filterByLabel</b></span>
+                        <a href="#filterByLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterByLabel(labelId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Filter by label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>labelId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterByQuery"></a>
+                    <span class="name">
+                        <span ><b>filterByQuery</b></span>
+                        <a href="#filterByQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterByQuery(query: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Filter by query</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On destroy</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On init</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openEditLabelsDialog"></a>
+                    <span class="name">
+                        <span ><b>openEditLabelsDialog</b></span>
+                        <a href="#openEditLabelsDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openEditLabelsDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="189"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:189</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open the edit labels dialog</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openNoteDialog"></a>
+                    <span class="name">
+                        <span ><b>openNoteDialog</b></span>
+                        <a href="#openNoteDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openNoteDialog(note: <a href="../interfaces/Note.html" target="_self">Note</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open the note dialog</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>note</td>
+                                    <td>
+                                                <code><a href="../interfaces/Note.html" target="_self" >Note</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetFilter"></a>
+                    <span class="name">
+                        <span ><b>resetFilter</b></span>
+                        <a href="#resetFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="239"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reset filter</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByFn"></a>
+                    <span class="name">
+                        <span ><b>trackByFn</b></span>
+                        <a href="#trackByFn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>trackByFn(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, item: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="250"
+                            class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:250</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Track by function for ngFor loops</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_unsubscribeAll"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_unsubscribeAll</b></span>
+                        <a href="#_unsubscribeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawerMode"></a>
+                    <span class="name">
+                        <span ><b>drawerMode</b></span>
+                        <a href="#drawerMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;over&quot; | &quot;side&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;side&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawerOpened"></a>
+                    <span class="name">
+                        <span ><b>drawerOpened</b></span>
+                        <a href="#drawerOpened"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter$"></a>
+                    <span class="name">
+                        <span ><b>filter$</b></span>
+                        <a href="#filter$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(&#x27;notes&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="labels$"></a>
+                    <span class="name">
+                        <span ><b>labels$</b></span>
+                        <a href="#labels$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Label.html" target="_self" >Observable&lt;Label[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="masonryColumns"></a>
+                    <span class="name">
+                        <span ><b>masonryColumns</b></span>
+                        <a href="#masonryColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>4</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notes$"></a>
+                    <span class="name">
+                        <span ><b>notes$</b></span>
+                        <a href="#notes$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Note.html" target="_self" >Observable&lt;Note[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchQuery$"></a>
+                    <span class="name">
+                        <span ><b>searchQuery$</b></span>
+                        <a href="#searchQuery$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(null)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterStatus"></a>
+                        <span class="name"><b>filterStatus</b><a href="#filterStatus"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>filterStatus()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/admin/apps/notes/list/list.component.ts:49</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Get the filter status</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { BehaviorSubject, combineLatest, distinctUntilChanged, map, Observable, Subject, takeUntil } from &#x27;rxjs&#x27;;
+import { FuseMediaWatcherService } from &#x27;@fuse/services/media-watcher&#x27;;
+import { NotesDetailsComponent } from &#x27;app/modules/admin/apps/notes/details/details.component&#x27;;
+import { NotesLabelsComponent } from &#x27;app/modules/admin/apps/notes/labels/labels.component&#x27;;
+import { NotesService } from &#x27;app/modules/admin/apps/notes/notes.service&#x27;;
+import { Label, Note } from &#x27;app/modules/admin/apps/notes/notes.types&#x27;;
+import { cloneDeep } from &#x27;lodash-es&#x27;;
+
+@Component({
+    selector       : &#x27;notes-list&#x27;,
+    templateUrl    : &#x27;./list.component.html&#x27;,
+    encapsulation  : ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class NotesListComponent implements OnInit, OnDestroy
+{
+    labels$: Observable&lt;Label[]&gt;;
+    notes$: Observable&lt;Note[]&gt;;
+
+    drawerMode: &#x27;over&#x27; | &#x27;side&#x27; &#x3D; &#x27;side&#x27;;
+    drawerOpened: boolean &#x3D; true;
+    filter$: BehaviorSubject&lt;string&gt; &#x3D; new BehaviorSubject(&#x27;notes&#x27;);
+    searchQuery$: BehaviorSubject&lt;string&gt; &#x3D; new BehaviorSubject(null);
+    masonryColumns: number &#x3D; 4;
+
+    private _unsubscribeAll: Subject&lt;any&gt; &#x3D; new Subject&lt;any&gt;();
+
+    /**
+     * Constructor
+     */
+    constructor(
+        private _changeDetectorRef: ChangeDetectorRef,
+        private _fuseMediaWatcherService: FuseMediaWatcherService,
+        private _matDialog: MatDialog,
+        private _notesService: NotesService
+    )
+    {
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Accessors
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Get the filter status
+     */
+    get filterStatus(): string
+    {
+        return this.filter$.value;
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Lifecycle hooks
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * On init
+     */
+    ngOnInit(): void
+    {
+        // Request the data from the server
+        this._notesService.getLabels().subscribe();
+        this._notesService.getNotes().subscribe();
+
+        // Get labels
+        this.labels$ &#x3D; this._notesService.labels$;
+
+        // Get notes
+        this.notes$ &#x3D; combineLatest([this._notesService.notes$, this.filter$, this.searchQuery$]).pipe(
+            distinctUntilChanged(),
+            map(([notes, filter, searchQuery]) &#x3D;&gt; {
+
+                if ( !notes || !notes.length )
+                {
+                    return;
+                }
+
+                // Store the filtered notes
+                let filteredNotes &#x3D; notes;
+
+                // Filter by query
+                if ( searchQuery )
+                {
+                    searchQuery &#x3D; searchQuery.trim().toLowerCase();
+                    filteredNotes &#x3D; filteredNotes.filter(note &#x3D;&gt; note.title.toLowerCase().includes(searchQuery) || note.content.toLowerCase().includes(searchQuery));
+                }
+
+                // Show all
+                if ( filter &#x3D;&#x3D;&#x3D; &#x27;notes&#x27; )
+                {
+                    // Do nothing
+                }
+
+                // Show archive
+                const isArchive &#x3D; filter &#x3D;&#x3D;&#x3D; &#x27;archived&#x27;;
+                filteredNotes &#x3D; filteredNotes.filter(note &#x3D;&gt; note.archived &#x3D;&#x3D;&#x3D; isArchive);
+
+                // Filter by label
+                if ( filter.startsWith(&#x27;label:&#x27;) )
+                {
+                    const labelId &#x3D; filter.split(&#x27;:&#x27;)[1];
+                    filteredNotes &#x3D; filteredNotes.filter(note &#x3D;&gt; !!note.labels.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; labelId));
+                }
+
+                return filteredNotes;
+            })
+        );
+
+        // Subscribe to media changes
+        this._fuseMediaWatcherService.onMediaChange$
+            .pipe(takeUntil(this._unsubscribeAll))
+            .subscribe(({matchingAliases}) &#x3D;&gt; {
+
+                // Set the drawerMode and drawerOpened if the given breakpoint is active
+                if ( matchingAliases.includes(&#x27;lg&#x27;) )
+                {
+                    this.drawerMode &#x3D; &#x27;side&#x27;;
+                    this.drawerOpened &#x3D; true;
+                }
+                else
+                {
+                    this.drawerMode &#x3D; &#x27;over&#x27;;
+                    this.drawerOpened &#x3D; false;
+                }
+
+                // Set the masonry columns
+                //
+                // This if block structured in a way so that only the
+                // biggest matching alias will be used to set the column
+                // count.
+                if ( matchingAliases.includes(&#x27;xl&#x27;) )
+                {
+                    this.masonryColumns &#x3D; 5;
+                }
+                else if ( matchingAliases.includes(&#x27;lg&#x27;) )
+                {
+                    this.masonryColumns &#x3D; 4;
+                }
+                else if ( matchingAliases.includes(&#x27;md&#x27;) )
+                {
+                    this.masonryColumns &#x3D; 3;
+                }
+                else if ( matchingAliases.includes(&#x27;sm&#x27;) )
+                {
+                    this.masonryColumns &#x3D; 2;
+                }
+                else
+                {
+                    this.masonryColumns &#x3D; 1;
+                }
+
+                // Mark for check
+                this._changeDetectorRef.markForCheck();
+            });
+    }
+
+    /**
+     * On destroy
+     */
+    ngOnDestroy(): void
+    {
+        // Unsubscribe from all subscriptions
+        this._unsubscribeAll.next(null);
+        this._unsubscribeAll.complete();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Add a new note
+     */
+    addNewNote(): void
+    {
+        this._matDialog.open(NotesDetailsComponent, {
+            autoFocus: false,
+            data     : {
+                note: {}
+            }
+        });
+    }
+
+    /**
+     * Open the edit labels dialog
+     */
+    openEditLabelsDialog(): void
+    {
+        this._matDialog.open(NotesLabelsComponent, {autoFocus: false});
+    }
+
+    /**
+     * Open the note dialog
+     */
+    openNoteDialog(note: Note): void
+    {
+        this._matDialog.open(NotesDetailsComponent, {
+            autoFocus: false,
+            data     : {
+                note: cloneDeep(note)
+            }
+        });
+    }
+
+    /**
+     * Filter by archived
+     */
+    filterByArchived(): void
+    {
+        this.filter$.next(&#x27;archived&#x27;);
+    }
+
+    /**
+     * Filter by label
+     *
+     * @param labelId
+     */
+    filterByLabel(labelId: string): void
+    {
+        const filterValue &#x3D; &#x60;label:${labelId}&#x60;;
+        this.filter$.next(filterValue);
+    }
+
+    /**
+     * Filter by query
+     *
+     * @param query
+     */
+    filterByQuery(query: string): void
+    {
+        this.searchQuery$.next(query);
+    }
+
+    /**
+     * Reset filter
+     */
+    resetFilter(): void
+    {
+        this.filter$.next(&#x27;notes&#x27;);
+    }
+
+    /**
+     * Track by function for ngFor loops
+     *
+     * @param index
+     * @param item
+     */
+    trackByFn(index: number, item: any): any
+    {
+        return item.id || index;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;absolute inset-0 flex flex-col min-w-0 overflow-hidden&quot;&gt;
+
+    &lt;mat-drawer-container class&#x3D;&quot;flex-auto h-full bg-card dark:bg-transparent&quot;&gt;
+
+        &lt;!-- Drawer --&gt;
+        &lt;mat-drawer
+            class&#x3D;&quot;w-2/3 sm:w-72 lg:w-56 border-r-0 bg-default&quot;
+            [mode]&#x3D;&quot;drawerMode&quot;
+            [opened]&#x3D;&quot;drawerOpened&quot;
+            #drawer&gt;
+            &lt;div class&#x3D;&quot;p-6 lg:py-8 lg:pl-4 lg:pr-0&quot;&gt;
+                &lt;!-- Filters --&gt;
+                &lt;div class&#x3D;&quot;space-y-2&quot;&gt;
+                    &lt;!-- Notes --&gt;
+                    &lt;div
+                        class&#x3D;&quot;relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400&#x27;: filterStatus &#x3D;&#x3D;&#x3D; &#x27;notes&#x27;,
+                                &#x27;text-hint hover:bg-hover&#x27;: filterStatus !&#x3D;&#x3D; &#x27;notes&#x27;}&quot;
+                        (click)&#x3D;&quot;resetFilter()&quot;
+                        matRipple
+                        [matRippleDisabled]&#x3D;&quot;filterStatus &#x3D;&#x3D;&#x3D; &#x27;notes&#x27;&quot;&gt;
+                        &lt;mat-icon
+                            class&#x3D;&quot;text-current&quot;
+                            [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:pencil-alt&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;div class&#x3D;&quot;ml-3 leading-5 select-none text-default&quot;&gt;Notes&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Archive --&gt;
+                    &lt;div
+                        class&#x3D;&quot;relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400&#x27;: filterStatus &#x3D;&#x3D;&#x3D; &#x27;archived&#x27;,
+                                &#x27;text-hint hover:bg-hover&#x27;: filterStatus !&#x3D;&#x3D; &#x27;archived&#x27;}&quot;
+                        (click)&#x3D;&quot;filterByArchived()&quot;
+                        matRipple
+                        [matRippleDisabled]&#x3D;&quot;filterStatus &#x3D;&#x3D;&#x3D; &#x27;archived&#x27;&quot;&gt;
+                        &lt;mat-icon
+                            class&#x3D;&quot;text-current&quot;
+                            [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:archive&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;div class&#x3D;&quot;ml-3 leading-5 select-none text-default&quot;&gt;Archive&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Labels --&gt;
+                    &lt;ng-container *ngIf&#x3D;&quot;(labels$ | async) as labels&quot;&gt;
+                        &lt;ng-container *ngFor&#x3D;&quot;let label of labels; trackBy: trackByFn&quot;&gt;
+                            &lt;div
+                                class&#x3D;&quot;relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer&quot;
+                                [ngClass]&#x3D;&quot;{&#x27;bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400&#x27;: &#x27;label:&#x27; + label.id &#x3D;&#x3D;&#x3D; filterStatus,
+                                    &#x27;text-hint hover:bg-hover&#x27;: &#x27;label:&#x27; + label.id !&#x3D;&#x3D; filterStatus}&quot;
+                                (click)&#x3D;&quot;filterByLabel(label.id)&quot;
+                                matRipple
+                                [matRippleDisabled]&#x3D;&quot;&#x27;label:&#x27; + label.id &#x3D;&#x3D;&#x3D; filterStatus&quot;&gt;
+                                &lt;mat-icon
+                                    class&#x3D;&quot;text-current&quot;
+                                    [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:tag&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                &lt;div class&#x3D;&quot;ml-3 leading-5 select-none text-default&quot;&gt;{{label.title}}&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/ng-container&gt;
+                    &lt;/ng-container&gt;
+                    &lt;!-- Edit Labels --&gt;
+                    &lt;div
+                        class&#x3D;&quot;relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer hover:bg-hover&quot;
+                        (click)&#x3D;&quot;openEditLabelsDialog()&quot;
+                        matRipple&gt;
+                        &lt;mat-icon
+                            class&#x3D;&quot;text-hint&quot;
+                            [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:pencil&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;div class&#x3D;&quot;ml-3 leading-5 select-none&quot;&gt;Edit labels&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/mat-drawer&gt;
+
+        &lt;mat-drawer-content class&#x3D;&quot;flex flex-col bg-gray-100 dark:bg-transparent&quot;&gt;
+
+            &lt;!-- Main --&gt;
+            &lt;div class&#x3D;&quot;flex flex-col flex-auto p-6 md:p-8&quot;&gt;
+
+                &lt;!-- Header --&gt;
+                &lt;div class&#x3D;&quot;flex items-center&quot;&gt;
+                    &lt;div class&#x3D;&quot;flex items-center flex-auto&quot;&gt;
+                        &lt;button
+                            class&#x3D;&quot;flex lg:hidden -ml-2&quot;
+                            mat-icon-button
+                            (click)&#x3D;&quot;drawer.toggle()&quot;&gt;
+                            &lt;mat-icon [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:menu&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;/button&gt;
+                        &lt;mat-form-field
+                            class&#x3D;&quot;fuse-mat-rounded fuse-mat-dense flex-auto ml-4 lg:ml-0&quot;
+                            [subscriptSizing]&#x3D;&quot;&#x27;dynamic&#x27;&quot;&gt;
+                            &lt;mat-icon
+                                class&#x3D;&quot;icon-size-5&quot;
+                                [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:search&#x27;&quot;
+                                matPrefix&gt;&lt;/mat-icon&gt;
+                            &lt;input
+                                matInput
+                                [autocomplete]&#x3D;&quot;&#x27;off&#x27;&quot;
+                                [placeholder]&#x3D;&quot;&#x27;Search notes&#x27;&quot;
+                                (input)&#x3D;&quot;filterByQuery(searchInput.value)&quot;
+                                #searchInput&gt;
+                        &lt;/mat-form-field&gt;
+                    &lt;/div&gt;
+                    &lt;!-- New note --&gt;
+                    &lt;button
+                        class&#x3D;&quot;ml-4 px-1 sm:px-4 min-w-10&quot;
+                        mat-flat-button
+                        [color]&#x3D;&quot;&#x27;primary&#x27;&quot;
+                        (click)&#x3D;&quot;addNewNote()&quot;&gt;
+                        &lt;mat-icon
+                            class&#x3D;&quot;icon-size-5&quot;
+                            [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:plus-circle&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;span class&#x3D;&quot;hidden sm:inline-block ml-2&quot;&gt;New note&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Notes --&gt;
+                &lt;ng-container *ngIf&#x3D;&quot;(notes$ | async) as notes; else loading&quot;&gt;
+                    &lt;ng-container *ngIf&#x3D;&quot;notes.length; else noNotes&quot;&gt;
+
+                        &lt;!-- Masonry layout --&gt;
+                        &lt;fuse-masonry
+                            class&#x3D;&quot;-mx-2 mt-8&quot;
+                            [items]&#x3D;&quot;notes&quot;
+                            [columns]&#x3D;&quot;masonryColumns&quot;
+                            [columnsTemplate]&#x3D;&quot;columnsTemplate&quot;&gt;
+                            &lt;!-- Columns template --&gt;
+                            &lt;ng-template
+                                #columnsTemplate
+                                let-columns&gt;
+                                &lt;!-- Columns --&gt;
+                                &lt;ng-container *ngFor&#x3D;&quot;let column of columns; trackBy: trackByFn&quot;&gt;
+                                    &lt;!-- Column --&gt;
+                                    &lt;div class&#x3D;&quot;flex-1 px-2 space-y-4&quot;&gt;
+                                        &lt;ng-container *ngFor&#x3D;&quot;let note of column.items; trackBy: trackByFn&quot;&gt;
+                                            &lt;!-- Note --&gt;
+                                            &lt;div
+                                                class&#x3D;&quot;flex flex-col shadow rounded-2xl overflow-hidden cursor-pointer bg-card&quot;
+                                                (click)&#x3D;&quot;openNoteDialog(note)&quot;&gt;
+                                                &lt;!-- Image --&gt;
+                                                &lt;ng-container *ngIf&#x3D;&quot;note.image&quot;&gt;
+                                                    &lt;img
+                                                        class&#x3D;&quot;w-full object-cover&quot;
+                                                        [src]&#x3D;&quot;note.image&quot;&gt;
+                                                &lt;/ng-container&gt;
+                                                &lt;div class&#x3D;&quot;flex flex-auto flex-col p-6 space-y-4&quot;&gt;
+                                                    &lt;!-- Title --&gt;
+                                                    &lt;ng-container *ngIf&#x3D;&quot;note.title&quot;&gt;
+                                                        &lt;div class&#x3D;&quot;font-semibold line-clamp-3&quot;&gt;
+                                                            {{note.title}}
+                                                        &lt;/div&gt;
+                                                    &lt;/ng-container&gt;
+                                                    &lt;!-- Content --&gt;
+                                                    &lt;ng-container *ngIf&#x3D;&quot;note.content&quot;&gt;
+                                                        &lt;div [class.text-xl]&#x3D;&quot;note.content.length &lt; 70&quot;&gt;
+                                                            {{note.content}}
+                                                        &lt;/div&gt;
+                                                    &lt;/ng-container&gt;
+                                                    &lt;!-- Tasks --&gt;
+                                                    &lt;ng-container *ngIf&#x3D;&quot;note.tasks&quot;&gt;
+                                                        &lt;div class&#x3D;&quot;space-y-1.5&quot;&gt;
+                                                            &lt;ng-container *ngFor&#x3D;&quot;let task of note.tasks; trackBy: trackByFn&quot;&gt;
+                                                                &lt;div class&#x3D;&quot;flex items-center&quot;&gt;
+                                                                    &lt;ng-container *ngIf&#x3D;&quot;!task.completed&quot;&gt;
+                                                                        &lt;div class&#x3D;&quot;flex items-center justify-center w-5 h-5&quot;&gt;
+                                                                            &lt;div class&#x3D;&quot;w-4 h-4 rounded-full border-2&quot;&gt;&lt;/div&gt;
+                                                                        &lt;/div&gt;
+                                                                    &lt;/ng-container&gt;
+                                                                    &lt;ng-container *ngIf&#x3D;&quot;task.completed&quot;&gt;
+                                                                        &lt;mat-icon
+                                                                            class&#x3D;&quot;text-hint icon-size-5&quot;
+                                                                            [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:check-circle&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                                                    &lt;/ng-container&gt;
+                                                                    &lt;div
+                                                                        class&#x3D;&quot;ml-1.5 leading-5&quot;
+                                                                        [ngClass]&#x3D;&quot;{&#x27;text-secondary line-through&#x27;: task.completed}&quot;&gt;
+                                                                        {{task.content}}
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/ng-container&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/ng-container&gt;
+                                                    &lt;!-- Labels --&gt;
+                                                    &lt;ng-container *ngIf&#x3D;&quot;note.labels&quot;&gt;
+                                                        &lt;div class&#x3D;&quot;flex flex-wrap items-center -m-1&quot;&gt;
+                                                            &lt;ng-container *ngFor&#x3D;&quot;let label of note.labels; trackBy: trackByFn&quot;&gt;
+                                                                &lt;div class&#x3D;&quot;m-1 py-0.5 px-3 rounded-full text-sm font-medium text-gray-500 bg-gray-100 dark:text-gray-300 dark:bg-gray-700&quot;&gt;
+                                                                    {{label.title}}
+                                                                &lt;/div&gt;
+                                                            &lt;/ng-container&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/ng-container&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/ng-container&gt;
+                                    &lt;/div&gt;
+                                &lt;/ng-container&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/fuse-masonry&gt;
+
+                    &lt;/ng-container&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Loading template --&gt;
+                &lt;ng-template #loading&gt;
+                    &lt;div class&#x3D;&quot;flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent&quot;&gt;
+                        &lt;div class&#x3D;&quot;mt-4 text-2xl font-semibold tracking-tight text-secondary&quot;&gt;Loading...&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/ng-template&gt;
+
+                &lt;!-- No notes template --&gt;
+                &lt;ng-template #noNotes&gt;
+                    &lt;div class&#x3D;&quot;flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent&quot;&gt;
+                        &lt;mat-icon
+                            class&#x3D;&quot;icon-size-24&quot;
+                            [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:document&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                        &lt;div class&#x3D;&quot;mt-4 text-2xl font-semibold tracking-tight text-secondary&quot;&gt;There are no notes!&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/ng-template&gt;
+
+            &lt;/div&gt;
+
+        &lt;/mat-drawer-content&gt;
+
+    &lt;/mat-drawer-container&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden">    <mat-drawer-container class="flex-auto h-full bg-card dark:bg-transparent">        <!-- Drawer -->        <mat-drawer            class="w-2/3 sm:w-72 lg:w-56 border-r-0 bg-default"            [mode]="drawerMode"            [opened]="drawerOpened"            #drawer>            <div class="p-6 lg:py-8 lg:pl-4 lg:pr-0">                <!-- Filters -->                <div class="space-y-2">                    <!-- Notes -->                    <div                        class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"                        [ngClass]="{\'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400\': filterStatus === \'notes\',                                \'text-hint hover:bg-hover\': filterStatus !== \'notes\'}"                        (click)="resetFilter()"                        matRipple                        [matRippleDisabled]="filterStatus === \'notes\'">                        <mat-icon                            class="text-current"                            [svgIcon]="\'heroicons_outline:pencil-alt\'"></mat-icon>                        <div class="ml-3 leading-5 select-none text-default">Notes</div>                    </div>                    <!-- Archive -->                    <div                        class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"                        [ngClass]="{\'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400\': filterStatus === \'archived\',                                \'text-hint hover:bg-hover\': filterStatus !== \'archived\'}"                        (click)="filterByArchived()"                        matRipple                        [matRippleDisabled]="filterStatus === \'archived\'">                        <mat-icon                            class="text-current"                            [svgIcon]="\'heroicons_outline:archive\'"></mat-icon>                        <div class="ml-3 leading-5 select-none text-default">Archive</div>                    </div>                    <!-- Labels -->                    <ng-container *ngIf="(labels$ | async) as labels">                        <ng-container *ngFor="let label of labels; trackBy: trackByFn">                            <div                                class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"                                [ngClass]="{\'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400\': \'label:\' + label.id === filterStatus,                                    \'text-hint hover:bg-hover\': \'label:\' + label.id !== filterStatus}"                                (click)="filterByLabel(label.id)"                                matRipple                                [matRippleDisabled]="\'label:\' + label.id === filterStatus">                                <mat-icon                                    class="text-current"                                    [svgIcon]="\'heroicons_outline:tag\'"></mat-icon>                                <div class="ml-3 leading-5 select-none text-default">{{label.title}}</div>                            </div>                        </ng-container>                    </ng-container>                    <!-- Edit Labels -->                    <div                        class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer hover:bg-hover"                        (click)="openEditLabelsDialog()"                        matRipple>                        <mat-icon                            class="text-hint"                            [svgIcon]="\'heroicons_outline:pencil\'"></mat-icon>                        <div class="ml-3 leading-5 select-none">Edit labels</div>                    </div>                </div>            </div>        </mat-drawer>        <mat-drawer-content class="flex flex-col bg-gray-100 dark:bg-transparent">            <!-- Main -->            <div class="flex flex-col flex-auto p-6 md:p-8">                <!-- Header -->                <div class="flex items-center">                    <div class="flex items-center flex-auto">                        <button                            class="flex lg:hidden -ml-2"                            mat-icon-button                            (click)="drawer.toggle()">                            <mat-icon [svgIcon]="\'heroicons_outline:menu\'"></mat-icon>                        </button>                        <mat-form-field                            class="fuse-mat-rounded fuse-mat-dense flex-auto ml-4 lg:ml-0"                            [subscriptSizing]="\'dynamic\'">                            <mat-icon                                class="icon-size-5"                                [svgIcon]="\'heroicons_solid:search\'"                                matPrefix></mat-icon>                            <input                                matInput                                [autocomplete]="\'off\'"                                [placeholder]="\'Search notes\'"                                (input)="filterByQuery(searchInput.value)"                                #searchInput>                        </mat-form-field>                    </div>                    <!-- New note -->                    <button                        class="ml-4 px-1 sm:px-4 min-w-10"                        mat-flat-button                        [color]="\'primary\'"                        (click)="addNewNote()">                        <mat-icon                            class="icon-size-5"                            [svgIcon]="\'heroicons_solid:plus-circle\'"></mat-icon>                        <span class="hidden sm:inline-block ml-2">New note</span>                    </button>                </div>                <!-- Notes -->                <ng-container *ngIf="(notes$ | async) as notes; else loading">                    <ng-container *ngIf="notes.length; else noNotes">                        <!-- Masonry layout -->                        <fuse-masonry                            class="-mx-2 mt-8"                            [items]="notes"                            [columns]="masonryColumns"                            [columnsTemplate]="columnsTemplate">                            <!-- Columns template -->                            <ng-template                                #columnsTemplate                                let-columns>                                <!-- Columns -->                                <ng-container *ngFor="let column of columns; trackBy: trackByFn">                                    <!-- Column -->                                    <div class="flex-1 px-2 space-y-4">                                        <ng-container *ngFor="let note of column.items; trackBy: trackByFn">                                            <!-- Note -->                                            <div                                                class="flex flex-col shadow rounded-2xl overflow-hidden cursor-pointer bg-card"                                                (click)="openNoteDialog(note)">                                                <!-- Image -->                                                <ng-container *ngIf="note.image">                                                    <img                                                        class="w-full object-cover"                                                        [src]="note.image">                                                </ng-container>                                                <div class="flex flex-auto flex-col p-6 space-y-4">                                                    <!-- Title -->                                                    <ng-container *ngIf="note.title">                                                        <div class="font-semibold line-clamp-3">                                                            {{note.title}}                                                        </div>                                                    </ng-container>                                                    <!-- Content -->                                                    <ng-container *ngIf="note.content">                                                        <div [class.text-xl]="note.content.length < 70">                                                            {{note.content}}                                                        </div>                                                    </ng-container>                                                    <!-- Tasks -->                                                    <ng-container *ngIf="note.tasks">                                                        <div class="space-y-1.5">                                                            <ng-container *ngFor="let task of note.tasks; trackBy: trackByFn">                                                                <div class="flex items-center">                                                                    <ng-container *ngIf="!task.completed">                                                                        <div class="flex items-center justify-center w-5 h-5">                                                                            <div class="w-4 h-4 rounded-full border-2"></div>                                                                        </div>                                                                    </ng-container>                                                                    <ng-container *ngIf="task.completed">                                                                        <mat-icon                                                                            class="text-hint icon-size-5"                                                                            [svgIcon]="\'heroicons_solid:check-circle\'"></mat-icon>                                                                    </ng-container>                                                                    <div                                                                        class="ml-1.5 leading-5"                                                                        [ngClass]="{\'text-secondary line-through\': task.completed}">                                                                        {{task.content}}                                                                    </div>                                                                </div>                                                            </ng-container>                                                        </div>                                                    </ng-container>                                                    <!-- Labels -->                                                    <ng-container *ngIf="note.labels">                                                        <div class="flex flex-wrap items-center -m-1">                                                            <ng-container *ngFor="let label of note.labels; trackBy: trackByFn">                                                                <div class="m-1 py-0.5 px-3 rounded-full text-sm font-medium text-gray-500 bg-gray-100 dark:text-gray-300 dark:bg-gray-700">                                                                    {{label.title}}                                                                </div>                                                            </ng-container>                                                        </div>                                                    </ng-container>                                                </div>                                            </div>                                        </ng-container>                                    </div>                                </ng-container>                            </ng-template>                        </fuse-masonry>                    </ng-container>                </ng-container>                <!-- Loading template -->                <ng-template #loading>                    <div class="flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent">                        <div class="mt-4 text-2xl font-semibold tracking-tight text-secondary">Loading...</div>                    </div>                </ng-template>                <!-- No notes template -->                <ng-template #noNotes>                    <div class="flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent">                        <mat-icon                            class="icon-size-24"                            [svgIcon]="\'heroicons_outline:document\'"></mat-icon>                        <div class="mt-4 text-2xl font-semibold tracking-tight text-secondary">There are no notes!</div>                    </div>                </ng-template>            </div>        </mat-drawer-content>    </mat-drawer-container></div></div>'
+    var COMPONENTS = [{'name': 'AcademyComponent', 'selector': 'academy'},{'name': 'AcademyDetailsComponent', 'selector': 'academy-details'},{'name': 'AcademyListComponent', 'selector': 'academy-list'},{'name': 'ActivitiesComponent', 'selector': 'activity'},{'name': 'AdvancedSearchComponent', 'selector': 'advanced-search'},{'name': 'AlertComponent', 'selector': 'alert'},{'name': 'AnalyticsComponent', 'selector': 'analytics'},{'name': 'AnimationsComponent', 'selector': 'animations'},{'name': 'ApexChartsComponent', 'selector': 'apex-charts'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthConfirmationRequiredComponent', 'selector': 'auth-confirmation-required'},{'name': 'AuthForgotPasswordComponent', 'selector': 'auth-forgot-password'},{'name': 'AuthResetPasswordComponent', 'selector': 'auth-reset-password'},{'name': 'AuthSignInComponent', 'selector': 'auth-sign-in'},{'name': 'AuthSignOutComponent', 'selector': 'auth-sign-out'},{'name': 'AuthSignUpComponent', 'selector': 'auth-sign-up'},{'name': 'AuthUnlockSessionComponent', 'selector': 'auth-unlock-session'},{'name': 'BankingAccountComponent', 'selector': 'app-banking-account'},{'name': 'CardComponent', 'selector': 'card'},{'name': 'CardedFullwidthContentScrollComponent', 'selector': 'carded-fullwidth-content-scroll'},{'name': 'CardedFullwidthNormalScrollComponent', 'selector': 'carded-fullwidth-normal-scroll'},{'name': 'CardedFullwidthPageScrollComponent', 'selector': 'carded-fullwidth-page-scroll'},{'name': 'CardedLeftSidebar1ContentScrollComponent', 'selector': 'carded-left-sidebar-1-content-scroll'},{'name': 'CardedLeftSidebar1NormalScrollComponent', 'selector': 'carded-left-sidebar-1-normal-scroll'},{'name': 'CardedLeftSidebar1PageScrollComponent', 'selector': 'carded-left-sidebar-1-page-scroll'},{'name': 'CardedLeftSidebar2ContentScrollComponent', 'selector': 'carded-left-sidebar-2-content-scroll'},{'name': 'CardedLeftSidebar2NormalScrollComponent', 'selector': 'carded-left-sidebar-2-normal-scroll'},{'name': 'CardedLeftSidebar2PageScrollComponent', 'selector': 'carded-left-sidebar-2-page-scroll'},{'name': 'CardedRightSidebar1ContentScrollComponent', 'selector': 'carded-right-sidebar-1-content-scroll'},{'name': 'CardedRightSidebar1NormalScrollComponent', 'selector': 'carded-right-sidebar-1-normal-scroll'},{'name': 'CardedRightSidebar1PageScrollComponent', 'selector': 'carded-right-sidebar-1-page-scroll'},{'name': 'CardedRightSidebar2ContentScrollComponent', 'selector': 'carded-right-sidebar-2-content-scroll'},{'name': 'CardedRightSidebar2NormalScrollComponent', 'selector': 'carded-right-sidebar-2-normal-scroll'},{'name': 'CardedRightSidebar2PageScrollComponent', 'selector': 'carded-right-sidebar-2-page-scroll'},{'name': 'CardsComponent', 'selector': 'cards'},{'name': 'CenteredLayoutComponent', 'selector': 'centered-layout'},{'name': 'ChangelogComponent', 'selector': 'changelog'},{'name': 'ChatComponent', 'selector': 'chat'},{'name': 'ChatsComponent', 'selector': 'chat-chats'},{'name': 'ClassicLayoutComponent', 'selector': 'classic-layout'},{'name': 'ClassyLayoutComponent', 'selector': 'classy-layout'},{'name': 'ColorsComponent', 'selector': 'colors'},{'name': 'ComingSoonClassicComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'CompactComponent', 'selector': 'compact'},{'name': 'CompactLayoutComponent', 'selector': 'compact-layout'},{'name': 'ComponentStructureComponent', 'selector': 'component-structure'},{'name': 'ComponentThemingComponent', 'selector': 'component-theming'},{'name': 'ConfigComponent', 'selector': 'config'},{'name': 'ConfirmationComponent', 'selector': 'confirmation'},{'name': 'ConfirmationDialogComponent', 'selector': 'confirmation'},{'name': 'ConfirmationRequiredClassicComponent', 'selector': 'confirmation-required-classic'},{'name': 'ConfirmationRequiredFullscreenComponent', 'selector': 'confirmation-required-fullscreen'},{'name': 'ConfirmationRequiredFullscreenReversedComponent', 'selector': 'confirmation-required-fullscreen-reversed'},{'name': 'ConfirmationRequiredModernComponent', 'selector': 'confirmation-required-modern'},{'name': 'ConfirmationRequiredModernReversedComponent', 'selector': 'confirmation-required-modern-reversed'},{'name': 'ConfirmationRequiredSplitScreenComponent', 'selector': 'confirmation-required-split-screen'},{'name': 'ConfirmationRequiredSplitScreenReversedComponent', 'selector': 'confirmation-required-split-screen-reversed'},{'name': 'ContactInfoComponent', 'selector': 'chat-contact-info'},{'name': 'ContactsComponent', 'selector': 'contacts'},{'name': 'ContactsDetailsComponent', 'selector': 'contacts-details'},{'name': 'ContactsListComponent', 'selector': 'contacts-list'},{'name': 'ConversationComponent', 'selector': 'chat-conversation'},{'name': 'CreditComponent', 'selector': 'app-credit'},{'name': 'CreditDetailsDialogComponent', 'selector': 'app-credit-details-dialog'},{'name': 'CryptoComponent', 'selector': 'crypto'},{'name': 'DatatableComponent', 'selector': 'datatable'},{'name': 'DemoPlaceholderComponent', 'selector': 'demo-placeholder'},{'name': 'DemoSidebarComponent', 'selector': 'demo-sidebar'},{'name': 'DenseLayoutComponent', 'selector': 'dense-layout'},{'name': 'DeploymentComponent', 'selector': 'deployment'},{'name': 'DirectoryStructureComponent', 'selector': 'directory-structure'},{'name': 'DrawerComponent', 'selector': 'drawer'},{'name': 'EmptyConversationComponent', 'selector': 'chat-empty-conversation'},{'name': 'EmptyLayoutComponent', 'selector': 'empty-layout'},{'name': 'EmptyNormalScrollComponent', 'selector': 'empty-normal-scroll'},{'name': 'EmptyPageScrollComponent', 'selector': 'empty-page-scroll'},{'name': 'EnterpriseLayoutComponent', 'selector': 'enterprise-layout'},{'name': 'Error404Component', 'selector': 'error-404'},{'name': 'Error500Component', 'selector': 'error-500'},{'name': 'FileManagerComponent', 'selector': 'file-manager'},{'name': 'FileManagerDetailsComponent', 'selector': 'file-manager-details'},{'name': 'FileManagerListComponent', 'selector': 'file-manager-list'},{'name': 'FinanceComponent', 'selector': 'finance'},{'name': 'FindByKeyComponent', 'selector': 'find-by-key'},{'name': 'ForgotPasswordClassicComponent', 'selector': 'forgot-password-classic'},{'name': 'ForgotPasswordFullscreenComponent', 'selector': 'forgot-password-fullscreen'},{'name': 'ForgotPasswordFullscreenReversedComponent', 'selector': 'forgot-password-fullscreen-reversed'},{'name': 'ForgotPasswordModernComponent', 'selector': 'forgot-password-modern'},{'name': 'ForgotPasswordModernReversedComponent', 'selector': 'forgot-password-modern-reversed'},{'name': 'ForgotPasswordSplitScreenComponent', 'selector': 'forgot-password-split-screen'},{'name': 'ForgotPasswordSplitScreenReversedComponent', 'selector': 'forgot-password-split-screen-reversed'},{'name': 'FormsFieldsComponent', 'selector': 'forms-fields'},{'name': 'FormsLayoutsComponent', 'selector': 'forms-layouts'},{'name': 'FormsWizardsComponent', 'selector': 'forms-wizards'},{'name': 'FullscreenComponent', 'selector': 'fullscreen'},{'name': 'FuseAlertComponent', 'selector': 'fuse-alert'},{'name': 'FuseCardComponent', 'selector': 'fuse-card'},{'name': 'FuseComponentsComponent', 'selector': 'fuse-components'},{'name': 'FuseConfirmationDialogComponent', 'selector': 'fuse-confirmation-dialog'},{'name': 'FuseDrawerComponent', 'selector': 'fuse-drawer'},{'name': 'FuseFullscreenComponent', 'selector': 'fuse-fullscreen'},{'name': 'FuseHighlightComponent', 'selector': 'textarea[fuse-highlight]'},{'name': 'FuseHorizontalNavigationBasicItemComponent', 'selector': 'fuse-horizontal-navigation-basic-item'},{'name': 'FuseHorizontalNavigationBranchItemComponent', 'selector': 'fuse-horizontal-navigation-branch-item'},{'name': 'FuseHorizontalNavigationComponent', 'selector': 'fuse-horizontal-navigation'},{'name': 'FuseHorizontalNavigationDividerItemComponent', 'selector': 'fuse-horizontal-navigation-divider-item'},{'name': 'FuseHorizontalNavigationSpacerItemComponent', 'selector': 'fuse-horizontal-navigation-spacer-item'},{'name': 'FuseLoadingBarComponent', 'selector': 'fuse-loading-bar'},{'name': 'FuseMasonryComponent', 'selector': 'fuse-masonry'},{'name': 'FuseVerticalNavigationAsideItemComponent', 'selector': 'fuse-vertical-navigation-aside-item'},{'name': 'FuseVerticalNavigationBasicItemComponent', 'selector': 'fuse-vertical-navigation-basic-item'},{'name': 'FuseVerticalNavigationCollapsableItemComponent', 'selector': 'fuse-vertical-navigation-collapsable-item'},{'name': 'FuseVerticalNavigationComponent', 'selector': 'fuse-vertical-navigation'},{'name': 'FuseVerticalNavigationDividerItemComponent', 'selector': 'fuse-vertical-navigation-divider-item'},{'name': 'FuseVerticalNavigationGroupItemComponent', 'selector': 'fuse-vertical-navigation-group-item'},{'name': 'FuseVerticalNavigationSpacerItemComponent', 'selector': 'fuse-vertical-navigation-spacer-item'},{'name': 'FuturisticLayoutComponent', 'selector': 'futuristic-layout'},{'name': 'GuidesComponent', 'selector': 'guides'},{'name': 'HelpCenterComponent', 'selector': 'help-center'},{'name': 'HelpCenterFaqsComponent', 'selector': 'help-center-faqs'},{'name': 'HelpCenterGuidesCategoryComponent', 'selector': 'help-center-guides-category'},{'name': 'HelpCenterGuidesComponent', 'selector': 'help-center-guides'},{'name': 'HelpCenterGuidesGuideComponent', 'selector': 'help-center-guides-guide'},{'name': 'HelpCenterSupportComponent', 'selector': 'help-center-support'},{'name': 'HighlightComponent', 'selector': 'highlight'},{'name': 'IconsComponent', 'selector': 'icons'},{'name': 'InstallationComponent', 'selector': 'installation'},{'name': 'InsuranceComponent', 'selector': 'app-insurance'},{'name': 'InsuranceDetailsComponent', 'selector': 'app-insurance-details'},{'name': 'InsuranceItemComponent', 'selector': 'insurance-item'},{'name': 'IntroductionComponent', 'selector': 'introduction'},{'name': 'InventoryComponent', 'selector': 'inventory'},{'name': 'InventoryListComponent', 'selector': 'inventory-list'},{'name': 'JwtComponent', 'selector': 'jwt'},{'name': 'LandingHomeComponent', 'selector': 'landing-home'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LayoutComponent', 'selector': 'layout'},{'name': 'LayoutOverviewComponent', 'selector': 'layout-overview'},{'name': 'LoadingBarComponent', 'selector': 'loading-bar'},{'name': 'MailboxComponent', 'selector': 'mailbox'},{'name': 'MailboxComposeComponent', 'selector': 'mailbox-compose'},{'name': 'MailboxDetailsComponent', 'selector': 'mailbox-details'},{'name': 'MailboxEmptyDetailsComponent', 'selector': 'mailbox-empty-details'},{'name': 'MailboxListComponent', 'selector': 'mailbox-list'},{'name': 'MailboxSettingsComponent', 'selector': 'mailbox-settings'},{'name': 'MailboxSidebarComponent', 'selector': 'mailbox-sidebar'},{'name': 'MaintenanceComponent', 'selector': 'maintenance'},{'name': 'MasonryComponent', 'selector': 'masonry'},{'name': 'MaterialComponentsComponent', 'selector': 'material-components'},{'name': 'MaterialLayoutComponent', 'selector': 'material-layout'},{'name': 'MediaWatcherComponent', 'selector': 'media-watcher'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MockApiComponent', 'selector': 'mock-api'},{'name': 'ModernComponent', 'selector': 'modern'},{'name': 'ModernLayoutComponent', 'selector': 'modern-layout'},{'name': 'MultiLanguageCustomizationComponent', 'selector': 'multi-language'},{'name': 'MustMatchComponent', 'selector': 'must-match'},{'name': 'NavigationComponent', 'selector': 'navigation'},{'name': 'NewChatComponent', 'selector': 'chat-new-chat'},{'name': 'NewTransactionFormComponent', 'selector': 'app-new-transaction-form'},{'name': 'NotesComponent', 'selector': 'notes'},{'name': 'NotesDetailsComponent', 'selector': 'notes-details'},{'name': 'NotesLabelsComponent', 'selector': 'notes-labels'},{'name': 'NotesListComponent', 'selector': 'notes-list'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OtherComponentsComponent', 'selector': 'other-components'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'PageLayoutsComponent', 'selector': 'page-layouts'},{'name': 'PrerequisitesComponent', 'selector': 'prerequisites'},{'name': 'PricingModernComponent', 'selector': 'pricing-modern'},{'name': 'PricingSimpleComponent', 'selector': 'pricing-simple'},{'name': 'PricingSingleComponent', 'selector': 'pricing-single'},{'name': 'PricingTableComponent', 'selector': 'pricing-table'},{'name': 'ProfileComponent', 'selector': 'profile'},{'name': 'ProfileComponent', 'selector': 'chat-profile'},{'name': 'ProjectComponent', 'selector': 'project'},{'name': 'QuickChatComponent', 'selector': 'quick-chat'},{'name': 'QuickChatComponent', 'selector': 'quick-chat'},{'name': 'QuillEditorComponent', 'selector': 'quill-editor'},{'name': 'ResetPasswordClassicComponent', 'selector': 'reset-password-classic'},{'name': 'ResetPasswordFullscreenComponent', 'selector': 'reset-password-fullscreen'},{'name': 'ResetPasswordFullscreenReversedComponent', 'selector': 'reset-password-fullscreen-reversed'},{'name': 'ResetPasswordModernComponent', 'selector': 'reset-password-modern'},{'name': 'ResetPasswordModernReversedComponent', 'selector': 'reset-password-modern-reversed'},{'name': 'ResetPasswordSplitScreenComponent', 'selector': 'reset-password-split-screen'},{'name': 'ResetPasswordSplitScreenReversedComponent', 'selector': 'reset-password-split-screen-reversed'},{'name': 'ScrollbarComponent', 'selector': 'scrollbar'},{'name': 'ScrollResetComponent', 'selector': 'scroll-reset'},{'name': 'ScrumboardBoardAddCardComponent', 'selector': 'scrumboard-board-add-card'},{'name': 'ScrumboardBoardAddListComponent', 'selector': 'scrumboard-board-add-list'},{'name': 'ScrumboardBoardComponent', 'selector': 'scrumboard-board'},{'name': 'ScrumboardBoardsComponent', 'selector': 'scrumboard-boards'},{'name': 'ScrumboardCardComponent', 'selector': 'scrumboard-card'},{'name': 'ScrumboardCardDetailsComponent', 'selector': 'scrumboard-card-details'},{'name': 'ScrumboardComponent', 'selector': 'scrumboard'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'ServingComponent', 'selector': 'serving'},{'name': 'SettingsAccountComponent', 'selector': 'settings-account'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsNotificationsComponent', 'selector': 'settings-notifications'},{'name': 'SettingsPlanBillingComponent', 'selector': 'settings-plan-billing'},{'name': 'SettingsSecurityComponent', 'selector': 'settings-security'},{'name': 'SettingsTeamComponent', 'selector': 'settings-team'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'SignInClassicComponent', 'selector': 'sign-in-classic'},{'name': 'SignInFullscreenComponent', 'selector': 'sign-in-fullscreen'},{'name': 'SignInFullscreenReversedComponent', 'selector': 'sign-in-fullscreen-reversed'},{'name': 'SignInModernComponent', 'selector': 'sign-in-modern'},{'name': 'SignInModernReversedComponent', 'selector': 'sign-in-modern-reversed'},{'name': 'SignInSplitScreenComponent', 'selector': 'sign-in-split-screen'},{'name': 'SignInSplitScreenReversedComponent', 'selector': 'sign-in-split-screen-reversed'},{'name': 'SignOutClassicComponent', 'selector': 'sign-out-classic'},{'name': 'SignOutFullscreenComponent', 'selector': 'sign-out-fullscreen'},{'name': 'SignOutFullscreenReversedComponent', 'selector': 'sign-out-fullscreen-reversed'},{'name': 'SignOutModernComponent', 'selector': 'sign-out-modern'},{'name': 'SignOutModernReversedComponent', 'selector': 'sign-out-modern-reversed'},{'name': 'SignOutSplitScreenComponent', 'selector': 'sign-out-split-screen'},{'name': 'SignOutSplitScreenReversedComponent', 'selector': 'sign-out-split-screen-reversed'},{'name': 'SignUpClassicComponent', 'selector': 'sign-up-classic'},{'name': 'SignUpFullscreenComponent', 'selector': 'sign-up-fullscreen'},{'name': 'SignUpFullscreenReversedComponent', 'selector': 'sign-up-fullscreen-reversed'},{'name': 'SignUpModernComponent', 'selector': 'sign-up-modern'},{'name': 'SignUpModernReversedComponent', 'selector': 'sign-up-modern-reversed'},{'name': 'SignUpSplitScreenComponent', 'selector': 'sign-up-split-screen'},{'name': 'SignUpSplitScreenReversedComponent', 'selector': 'sign-up-split-screen-reversed'},{'name': 'SimpleFullwidth1ContentScrollComponent', 'selector': 'simple-fullwidth-1-content-scroll'},{'name': 'SimpleFullwidth1NormalScrollComponent', 'selector': 'simple-fullwidth-1-normal-scroll'},{'name': 'SimpleFullwidth1PageScrollComponent', 'selector': 'simple-fullwidth-1-page-scroll'},{'name': 'SimpleFullwidth2ContentScrollComponent', 'selector': 'simple-fullwidth-2-content-scroll'},{'name': 'SimpleFullwidth2NormalScrollComponent', 'selector': 'simple-fullwidth-2-normal-scroll'},{'name': 'SimpleFullwidth2PageScrollComponent', 'selector': 'simple-fullwidth-2-page-scroll'},{'name': 'SimpleLeftSidebar1ContentScrollComponent', 'selector': 'simple-left-sidebar-1-content-scroll'},{'name': 'SimpleLeftSidebar1NormalScrollComponent', 'selector': 'simple-left-sidebar-1-normal-scroll'},{'name': 'SimpleLeftSidebar1PageScrollComponent', 'selector': 'simple-left-sidebar-1-page-scroll'},{'name': 'SimpleLeftSidebar2ContentScrollComponent', 'selector': 'simple-left-sidebar-2-content-scroll'},{'name': 'SimpleLeftSidebar2InnerScrollComponent', 'selector': 'simple-left-sidebar-2-inner-scroll'},{'name': 'SimpleLeftSidebar2NormalScrollComponent', 'selector': 'simple-left-sidebar-2-normal-scroll'},{'name': 'SimpleLeftSidebar2PageScrollComponent', 'selector': 'simple-left-sidebar-2-page-scroll'},{'name': 'SimpleLeftSidebar3NormalScrollComponent', 'selector': 'simple-left-sidebar-3-normal-scroll'},{'name': 'SimpleLeftSidebar3PageScrollComponent', 'selector': 'simple-left-sidebar-3-page-scroll'},{'name': 'SimpleLeftSidebar3ScrollComponent', 'selector': 'simple-left-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar1ContentScrollComponent', 'selector': 'simple-right-sidebar-1-content-scroll'},{'name': 'SimpleRightSidebar1NormalScrollComponent', 'selector': 'simple-right-sidebar-1-normal-scroll'},{'name': 'SimpleRightSidebar1PageScrollComponent', 'selector': 'simple-right-sidebar-1-page-scroll'},{'name': 'SimpleRightSidebar2ContentScrollComponent', 'selector': 'simple-right-sidebar-2-content-scroll'},{'name': 'SimpleRightSidebar2InnerScrollComponent', 'selector': 'simple-right-sidebar-2-inner-scroll'},{'name': 'SimpleRightSidebar2NormalScrollComponent', 'selector': 'simple-right-sidebar-2-normal-scroll'},{'name': 'SimpleRightSidebar2PageScrollComponent', 'selector': 'simple-right-sidebar-2-page-scroll'},{'name': 'SimpleRightSidebar3ContentScrollComponent', 'selector': 'simple-right-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar3NormalScrollComponent', 'selector': 'simple-right-sidebar-3-normal-scroll'},{'name': 'SimpleRightSidebar3PageScrollComponent', 'selector': 'simple-right-sidebar-3-page-scroll'},{'name': 'SplashScreenComponent', 'selector': 'splash-screen'},{'name': 'SplashScreenCustomizationComponent', 'selector': 'splash-screen'},{'name': 'StarterKitComponent', 'selector': 'starter-kit'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TasksComponent', 'selector': 'tasks'},{'name': 'TasksDetailsComponent', 'selector': 'tasks-details'},{'name': 'TasksListComponent', 'selector': 'tasks-list'},{'name': 'ThemeLayoutsComponent', 'selector': 'theme-layouts'},{'name': 'ThemingComponent', 'selector': 'theming'},{'name': 'ThinLayoutComponent', 'selector': 'thin-layout'},{'name': 'TransactionComponent', 'selector': 'app-transaction'},{'name': 'TransactionDetailsDialogComponent', 'selector': 'app-transaction-details-dialog'},{'name': 'TypographyComponent', 'selector': 'typography'},{'name': 'UnlockSessionClassicComponent', 'selector': 'unlock-session-classic'},{'name': 'UnlockSessionFullscreenComponent', 'selector': 'unlock-session-fullscreen'},{'name': 'UnlockSessionFullscreenReversedComponent', 'selector': 'unlock-session-fullscreen-reversed'},{'name': 'UnlockSessionModernComponent', 'selector': 'unlock-session-modern'},{'name': 'UnlockSessionModernReversedComponent', 'selector': 'unlock-session-modern-reversed'},{'name': 'UnlockSessionSplitScreenComponent', 'selector': 'unlock-session-split-screen'},{'name': 'UnlockSessionSplitScreenReversedComponent', 'selector': 'unlock-session-split-screen-reversed'},{'name': 'UpdatingComponent', 'selector': 'updating'},{'name': 'UserComponent', 'selector': 'user'},{'name': 'UserComponent', 'selector': 'user'}];
+    var DIRECTIVES = [{'name': 'FuseScrollbarDirective', 'selector': '[fuseScrollbar]'},{'name': 'FuseScrollResetDirective', 'selector': '[fuseScrollReset]'}];
+    var ACTUAL_COMPONENT = {'name': 'NotesListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NotesListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

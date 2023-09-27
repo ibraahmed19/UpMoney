@@ -1,0 +1,1989 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>fuse-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">fuse-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ScrumboardBoardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/admin/apps/scrumboard/board/board.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>scrumboard-board</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./board.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./board.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#_maxListCount" >_maxListCount</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#_maxPosition" >_maxPosition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#_positionStep" >_positionStep</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_unsubscribeAll" >_unsubscribeAll</a>
+                            </li>
+                            <li>
+                                <a href="#board" >board</a>
+                            </li>
+                            <li>
+                                <a href="#listTitleForm" >listTitleForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_calculatePositions" >_calculatePositions</a>
+                            </li>
+                            <li>
+                                <a href="#addCard" >addCard</a>
+                            </li>
+                            <li>
+                                <a href="#addList" >addList</a>
+                            </li>
+                            <li>
+                                <a href="#cardDropped" >cardDropped</a>
+                            </li>
+                            <li>
+                                <a href="#deleteList" >deleteList</a>
+                            </li>
+                            <li>
+                                <a href="#isOverdue" >isOverdue</a>
+                            </li>
+                            <li>
+                                <a href="#listDropped" >listDropped</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#renameList" >renameList</a>
+                            </li>
+                            <li>
+                                <a href="#trackByFn" >trackByFn</a>
+                            </li>
+                            <li>
+                                <a href="#updateListTitle" >updateListTitle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_changeDetectorRef: ChangeDetectorRef, _formBuilder: UntypedFormBuilder, _fuseConfirmationService: <a href="../injectables/FuseConfirmationService.html" target="_self">FuseConfirmationService</a>, _scrumboardService: <a href="../injectables/ScrumboardService.html" target="_self">ScrumboardService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_changeDetectorRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_formBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code>UntypedFormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_fuseConfirmationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FuseConfirmationService.html" target="_self" >FuseConfirmationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_scrumboardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScrumboardService.html" target="_self" >ScrumboardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_calculatePositions"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_calculatePositions</b></span>
+                        <a href="#_calculatePositions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_calculatePositions(event: CdkDragDrop<any[]>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculate and set item positions
+from given CdkDragDrop event</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>CdkDragDrop&lt;any[]&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCard"></a>
+                    <span class="name">
+                        <span ><b>addCard</b></span>
+                        <a href="#addCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCard(list: <a href="../classes/List.html" target="_self">List</a>, title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add new card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >List</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addList"></a>
+                    <span class="name">
+                        <span ><b>addList</b></span>
+                        <a href="#addList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addList(title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add new list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>title</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cardDropped"></a>
+                    <span class="name">
+                        <span ><b>cardDropped</b></span>
+                        <a href="#cardDropped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cardDropped(event: <a href="../classes/Card.html" target="_self">CdkDragDrop&lt;Card[]&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="215"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:215</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Card dropped</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >CdkDragDrop&lt;Card[]&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteList"></a>
+                    <span class="name">
+                        <span ><b>deleteList</b></span>
+                        <a href="#deleteList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteList(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isOverdue"></a>
+                    <span class="name">
+                        <span ><b>isOverdue</b></span>
+                        <a href="#isOverdue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isOverdue(date: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the given ISO_8601 date string is overdue</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listDropped"></a>
+                    <span class="name">
+                        <span ><b>listDropped</b></span>
+                        <a href="#listDropped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listDropped(event: <a href="../classes/List.html" target="_self">CdkDragDrop&lt;List[]&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List dropped</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >CdkDragDrop&lt;List[]&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On destroy</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On init</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="renameList"></a>
+                    <span class="name">
+                        <span ><b>renameList</b></span>
+                        <a href="#renameList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>renameList(listTitleInput: HTMLElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Focus on the given element to start editing the list title</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>listTitleInput</td>
+                                    <td>
+                                            <code>HTMLElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByFn"></a>
+                    <span class="name">
+                        <span ><b>trackByFn</b></span>
+                        <a href="#trackByFn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>trackByFn(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, item: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="255"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:255</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Track by function for ngFor loops</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateListTitle"></a>
+                    <span class="name">
+                        <span ><b>updateListTitle</b></span>
+                        <a href="#updateListTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateListTitle(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, list: <a href="../classes/List.html" target="_self">List</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the list title</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >List</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_maxListCount"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>_maxListCount</b></span>
+                        <a href="#_maxListCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>200</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_maxPosition"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>_maxPosition</b></span>
+                        <a href="#_maxPosition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._positionStep * 500</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_positionStep"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>_positionStep</b></span>
+                        <a href="#_positionStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>65536</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_unsubscribeAll"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_unsubscribeAll</b></span>
+                        <a href="#_unsubscribeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="board"></a>
+                    <span class="name">
+                        <span ><b>board</b></span>
+                        <a href="#board"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Board.html" target="_self" >Board</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listTitleForm"></a>
+                    <span class="name">
+                        <span ><b>listTitleForm</b></span>
+                        <a href="#listTitleForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>UntypedFormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/admin/apps/scrumboard/board/board.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+import { UntypedFormBuilder, UntypedFormGroup } from &#x27;@angular/forms&#x27;;
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from &#x27;@angular/cdk/drag-drop&#x27;;
+import { Subject, takeUntil } from &#x27;rxjs&#x27;;
+import { DateTime } from &#x27;luxon&#x27;;
+import { FuseConfirmationService } from &#x27;@fuse/services/confirmation&#x27;;
+import { ScrumboardService } from &#x27;app/modules/admin/apps/scrumboard/scrumboard.service&#x27;;
+import { Board, Card, List } from &#x27;app/modules/admin/apps/scrumboard/scrumboard.models&#x27;;
+
+@Component({
+    selector       : &#x27;scrumboard-board&#x27;,
+    templateUrl    : &#x27;./board.component.html&#x27;,
+    styleUrls      : [&#x27;./board.component.scss&#x27;],
+    encapsulation  : ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ScrumboardBoardComponent implements OnInit, OnDestroy
+{
+    board: Board;
+    listTitleForm: UntypedFormGroup;
+
+    // Private
+    private readonly _positionStep: number &#x3D; 65536;
+    private readonly _maxListCount: number &#x3D; 200;
+    private readonly _maxPosition: number &#x3D; this._positionStep * 500;
+    private _unsubscribeAll: Subject&lt;any&gt; &#x3D; new Subject&lt;any&gt;();
+
+    /**
+     * Constructor
+     */
+    constructor(
+        private _changeDetectorRef: ChangeDetectorRef,
+        private _formBuilder: UntypedFormBuilder,
+        private _fuseConfirmationService: FuseConfirmationService,
+        private _scrumboardService: ScrumboardService
+    )
+    {
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Lifecycle hooks
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * On init
+     */
+    ngOnInit(): void
+    {
+        // Initialize the list title form
+        this.listTitleForm &#x3D; this._formBuilder.group({
+            title: [&#x27;&#x27;]
+        });
+
+        // Get the board
+        this._scrumboardService.board$
+            .pipe(takeUntil(this._unsubscribeAll))
+            .subscribe((board: Board) &#x3D;&gt; {
+                this.board &#x3D; {...board};
+
+                // Mark for check
+                this._changeDetectorRef.markForCheck();
+            });
+    }
+
+    /**
+     * On destroy
+     */
+    ngOnDestroy(): void
+    {
+        // Unsubscribe from all subscriptions
+        this._unsubscribeAll.next(null);
+        this._unsubscribeAll.complete();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Focus on the given element to start editing the list title
+     *
+     * @param listTitleInput
+     */
+    renameList(listTitleInput: HTMLElement): void
+    {
+        // Use timeout so it can wait for menu to close
+        setTimeout(() &#x3D;&gt; {
+            listTitleInput.focus();
+        });
+    }
+
+    /**
+     * Add new list
+     *
+     * @param title
+     */
+    addList(title: string): void
+    {
+        // Limit the max list count
+        if ( this.board.lists.length &gt;&#x3D; this._maxListCount )
+        {
+            return;
+        }
+
+        // Create a new list model
+        const list &#x3D; new List({
+            boardId : this.board.id,
+            position: this.board.lists.length ? this.board.lists[this.board.lists.length - 1].position + this._positionStep : this._positionStep,
+            title   : title
+        });
+
+        // Save the list
+        this._scrumboardService.createList(list).subscribe();
+    }
+
+    /**
+     * Update the list title
+     *
+     * @param event
+     * @param list
+     */
+    updateListTitle(event: any, list: List): void
+    {
+        // Get the target element
+        const element: HTMLInputElement &#x3D; event.target;
+
+        // Get the new title
+        const newTitle &#x3D; element.value;
+
+        // If the title is empty...
+        if ( !newTitle || newTitle.trim() &#x3D;&#x3D;&#x3D; &#x27;&#x27; )
+        {
+            // Reset to original title and return
+            element.value &#x3D; list.title;
+            return;
+        }
+
+        // Update the list title and element value
+        list.title &#x3D; element.value &#x3D; newTitle.trim();
+
+        // Update the list
+        this._scrumboardService.updateList(list).subscribe();
+    }
+
+    /**
+     * Delete the list
+     *
+     * @param id
+     */
+    deleteList(id): void
+    {
+        // Open the confirmation dialog
+        const confirmation &#x3D; this._fuseConfirmationService.open({
+            title  : &#x27;Delete list&#x27;,
+            message: &#x27;Are you sure you want to delete this list and its cards? This action cannot be undone!&#x27;,
+            actions: {
+                confirm: {
+                    label: &#x27;Delete&#x27;
+                }
+            }
+        });
+
+        // Subscribe to the confirmation dialog closed action
+        confirmation.afterClosed().subscribe((result) &#x3D;&gt; {
+
+            // If the confirm button pressed...
+            if ( result &#x3D;&#x3D;&#x3D; &#x27;confirmed&#x27; )
+            {
+
+                // Delete the list
+                this._scrumboardService.deleteList(id).subscribe();
+            }
+        });
+    }
+
+    /**
+     * Add new card
+     */
+    addCard(list: List, title: string): void
+    {
+        // Create a new card model
+        const card &#x3D; new Card({
+            boardId : this.board.id,
+            listId  : list.id,
+            position: list.cards.length ? list.cards[list.cards.length - 1].position + this._positionStep : this._positionStep,
+            title   : title
+        });
+
+        // Save the card
+        this._scrumboardService.createCard(card).subscribe();
+    }
+
+    /**
+     * List dropped
+     *
+     * @param event
+     */
+    listDropped(event: CdkDragDrop&lt;List[]&gt;): void
+    {
+        // Move the item
+        moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+
+        // Calculate the positions
+        const updated &#x3D; this._calculatePositions(event);
+
+        // Update the lists
+        this._scrumboardService.updateLists(updated).subscribe();
+    }
+
+    /**
+     * Card dropped
+     *
+     * @param event
+     */
+    cardDropped(event: CdkDragDrop&lt;Card[]&gt;): void
+    {
+        // Move or transfer the item
+        if ( event.previousContainer &#x3D;&#x3D;&#x3D; event.container )
+        {
+            // Move the item
+            moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+        }
+        else
+        {
+            // Transfer the item
+            transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
+
+            // Update the card&#x27;s list it
+            event.container.data[event.currentIndex].listId &#x3D; event.container.id;
+        }
+
+        // Calculate the positions
+        const updated &#x3D; this._calculatePositions(event);
+
+        // Update the cards
+        this._scrumboardService.updateCards(updated).subscribe();
+    }
+
+    /**
+     * Check if the given ISO_8601 date string is overdue
+     *
+     * @param date
+     */
+    isOverdue(date: string): boolean
+    {
+        return DateTime.fromISO(date).startOf(&#x27;day&#x27;) &lt; DateTime.now().startOf(&#x27;day&#x27;);
+    }
+
+    /**
+     * Track by function for ngFor loops
+     *
+     * @param index
+     * @param item
+     */
+    trackByFn(index: number, item: any): any
+    {
+        return item.id || index;
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Private methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Calculate and set item positions
+     * from given CdkDragDrop event
+     *
+     * @param event
+     * @private
+     */
+    private _calculatePositions(event: CdkDragDrop&lt;any[]&gt;): any[]
+    {
+        // Get the items
+        let items &#x3D; event.container.data;
+        const currentItem &#x3D; items[event.currentIndex];
+        const prevItem &#x3D; items[event.currentIndex - 1] || null;
+        const nextItem &#x3D; items[event.currentIndex + 1] || null;
+
+        // If the item moved to the top...
+        if ( !prevItem )
+        {
+            // If the item moved to an empty container
+            if ( !nextItem )
+            {
+                currentItem.position &#x3D; this._positionStep;
+            }
+            else
+            {
+                currentItem.position &#x3D; nextItem.position / 2;
+            }
+        }
+        // If the item moved to the bottom...
+        else if ( !nextItem )
+        {
+            currentItem.position &#x3D; prevItem.position + this._positionStep;
+        }
+        // If the item moved in between other items...
+        else
+        {
+            currentItem.position &#x3D; (prevItem.position + nextItem.position) / 2;
+        }
+
+        // Check if all item positions need to be updated
+        if ( !Number.isInteger(currentItem.position) || currentItem.position &gt;&#x3D; this._maxPosition )
+        {
+            // Re-calculate all orders
+            items &#x3D; items.map((value, index) &#x3D;&gt; {
+                value.position &#x3D; (index + 1) * this._positionStep;
+                return value;
+            });
+
+            // Return items
+            return items;
+        }
+
+        // Return currentItem
+        return [currentItem];
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;absolute inset-0 flex flex-col min-w-0 overflow-hidden&quot;&gt;
+
+    &lt;!-- Header --&gt;
+    &lt;div class&#x3D;&quot;flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between p-6 sm:py-8 sm:px-10 border-b bg-card dark:bg-transparent&quot;&gt;
+        &lt;!-- Title --&gt;
+        &lt;div class&#x3D;&quot;flex-1 min-w-0&quot;&gt;
+            &lt;h2 class&#x3D;&quot;text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate&quot;&gt;
+                {{board.title}}
+            &lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;!-- Actions --&gt;
+        &lt;div class&#x3D;&quot;flex shrink-0 items-center mt-6 sm:mt-0 sm:ml-4&quot;&gt;
+            &lt;a
+                mat-stroked-button
+                [routerLink]&#x3D;&quot;[&#x27;..&#x27;]&quot;&gt;
+                &lt;mat-icon
+                    class&#x3D;&quot;icon-size-5&quot;
+                    [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:view-boards&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                &lt;span class&#x3D;&quot;ml-2&quot;&gt;Boards&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;button
+                class&#x3D;&quot;ml-3&quot;
+                mat-stroked-button&gt;
+                &lt;mat-icon
+                    class&#x3D;&quot;icon-size-5&quot;
+                    [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:cog&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                &lt;span class&#x3D;&quot;ml-2&quot;&gt;Settings&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Main --&gt;
+    &lt;div
+        class&#x3D;&quot;flex-auto p-6 sm:p-8 sm:pt-4 overflow-y-auto&quot;
+        cdkScrollable&gt;
+
+        &lt;!-- Lists --&gt;
+        &lt;div
+            class&#x3D;&quot;flex&quot;
+            cdkDropList
+            [cdkDropListData]&#x3D;&quot;board.lists&quot;
+            [cdkDropListOrientation]&#x3D;&quot;&#x27;horizontal&#x27;&quot;
+            (cdkDropListDropped)&#x3D;&quot;listDropped($event)&quot;&gt;
+
+            &lt;!-- Group all cdkDropList&#x27;s after this point together so that the cards can be transferred between lists --&gt;
+            &lt;div
+                class&#x3D;&quot;flex items-start&quot;
+                cdkDropListGroup&gt;
+
+                &lt;!-- List --&gt;
+                &lt;ng-container *ngFor&#x3D;&quot;let list of board.lists; trackBy: trackByFn&quot;&gt;
+                    &lt;div
+                        class&#x3D;&quot;flex-0 w-72 p-2 rounded-2xl bg-default&quot;
+                        cdkDrag
+                        [cdkDragLockAxis]&#x3D;&quot;&#x27;x&#x27;&quot;&gt;
+
+                        &lt;div
+                            class&#x3D;&quot;flex items-center justify-between&quot;
+                            cdkDragHandle&gt;
+                            &lt;div class&#x3D;&quot;flex items-center w-full py-2 px-3 rounded-md cursor-text border border-transparent focus-within:bg-white focus-within:shadow-sm focus-within:border-primary dark:focus-within:bg-gray-900&quot;&gt;
+                                &lt;input
+                                    class&#x3D;&quot;w-full font-medium leading-5 bg-transparent&quot;
+                                    [spellcheck]&#x3D;&quot;&#x27;false&#x27;&quot;
+                                    [value]&#x3D;&quot;list.title&quot;
+                                    (focusout)&#x3D;&quot;updateListTitle($event, list)&quot;
+                                    (keydown.enter)&#x3D;&quot;listTitleInput.blur()&quot;
+                                    #listTitleInput&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;flex items-center justify-center min-w-6 ml-4 text-sm font-semibold leading-6 rounded-full bg-gray-300 text-secondary dark:bg-gray-700&quot;&gt;
+                                {{list.cards.length}}
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;ml-1&quot;&gt;
+                                &lt;button
+                                    class&#x3D;&quot;w-8 h-8 min-h-8&quot;
+                                    mat-icon-button
+                                    [matMenuTriggerFor]&#x3D;&quot;listMenu&quot;&gt;
+                                    &lt;mat-icon
+                                        class&#x3D;&quot;icon-size-5&quot;
+                                        [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:dots-vertical&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                &lt;/button&gt;
+                                &lt;mat-menu #listMenu&#x3D;&quot;matMenu&quot;&gt;
+                                    &lt;button
+                                        mat-menu-item
+                                        (click)&#x3D;&quot;renameList(listTitleInput)&quot;&gt;
+                                        &lt;mat-icon
+                                            class&#x3D;&quot;icon-size-5&quot;
+                                            [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:pencil-alt&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                        Rename list
+                                    &lt;/button&gt;
+                                    &lt;button
+                                        mat-menu-item
+                                        (click)&#x3D;&quot;deleteList(list.id)&quot;&gt;
+                                        &lt;mat-icon
+                                            class&#x3D;&quot;icon-size-5&quot;
+                                            [svgIcon]&#x3D;&quot;&#x27;heroicons_solid:trash&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                        Delete list
+                                    &lt;/button&gt;
+                                &lt;/mat-menu&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Cards --&gt;
+                        &lt;div class&#x3D;&quot;mt-2 rounded-xl bg-gray-400 bg-opacity-12 dark:bg-transparent dark:border&quot;&gt;
+                            &lt;div
+                                [id]&#x3D;&quot;list.id&quot;
+                                class&#x3D;&quot;p-3 pb-0&quot;
+                                cdkDropList
+                                [cdkDropListData]&#x3D;&quot;list.cards&quot;
+                                (cdkDropListDropped)&#x3D;&quot;cardDropped($event)&quot;&gt;
+
+                                &lt;!-- Card --&gt;
+                                &lt;ng-container *ngFor&#x3D;&quot;let card of list.cards; trackBy: trackByFn&quot;&gt;
+                                    &lt;a
+                                        class&#x3D;&quot;flex flex-col items-start mb-3 p-5 space-y-3 shadow rounded-lg overflow-hidden bg-card&quot;
+                                        [routerLink]&#x3D;&quot;[&#x27;card&#x27;, card.id]&quot;
+                                        cdkDrag&gt;
+                                        &lt;!-- Cover image --&gt;
+                                        &lt;ng-container *ngIf&#x3D;&quot;card.coverImage&quot;&gt;
+                                            &lt;div class&#x3D;&quot;-mx-5 -mt-5 mb-2&quot;&gt;
+                                                &lt;img
+                                                    class&#x3D;&quot;w-full object-cover&quot;
+                                                    [src]&#x3D;&quot;card.coverImage&quot;&gt;
+                                            &lt;/div&gt;
+                                        &lt;/ng-container&gt;
+                                        &lt;!-- Title --&gt;
+                                        &lt;div class&#x3D;&quot;text-lg font-medium leading-5&quot;&gt;{{card.title}}&lt;/div&gt;
+                                        &lt;!-- Labels --&gt;
+                                        &lt;ng-container *ngIf&#x3D;&quot;card.labels.length&quot;&gt;
+                                            &lt;div&gt;
+                                                &lt;div class&#x3D;&quot;flex flex-wrap -mx-1 -mb-2&quot;&gt;
+                                                    &lt;ng-container *ngFor&#x3D;&quot;let label of card.labels; trackBy: trackByFn&quot;&gt;
+                                                        &lt;div class&#x3D;&quot;mx-1 mb-2 py-0.5 px-3 rounded-full text-sm font-medium text-gray-500 bg-gray-100 dark:text-gray-300 dark:bg-gray-700&quot;&gt;
+                                                            {{label.title}}
+                                                        &lt;/div&gt;
+                                                    &lt;/ng-container&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/ng-container&gt;
+                                        &lt;!-- Due date --&gt;
+                                        &lt;ng-container *ngIf&#x3D;&quot;card.dueDate&quot;&gt;
+                                            &lt;div
+                                                class&#x3D;&quot;flex items-center rounded text-sm font-medium leading-5 text-secondary&quot;
+                                                [ngClass]&#x3D;&quot;{&#x27;text-red-600&#x27;: isOverdue(card.dueDate)}&quot;&gt;
+                                                &lt;mat-icon
+                                                    class&#x3D;&quot;icon-size-4 text-current&quot;
+                                                    [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:clock&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                                                &lt;div class&#x3D;&quot;ml-1&quot;&gt;
+                                                    {{card.dueDate | date: &#x27;longDate&#x27;}}
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/ng-container&gt;
+                                    &lt;/a&gt;
+                                &lt;/ng-container&gt;
+                            &lt;/div&gt;
+
+                            &lt;!-- New card --&gt;
+                            &lt;scrumboard-board-add-card
+                                (saved)&#x3D;&quot;addCard(list, $event)&quot;
+                                [buttonTitle]&#x3D;&quot;list.cards.length ? &#x27;Add another card&#x27; : &#x27;Add a card&#x27;&quot;&gt;
+                            &lt;/scrumboard-board-add-card&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- New list --&gt;
+                &lt;scrumboard-board-add-list
+                    (saved)&#x3D;&quot;addList($event)&quot;
+                    [buttonTitle]&#x3D;&quot;board.lists.length ? &#x27;Add another list&#x27; : &#x27;Add a list&#x27;&quot;&gt;
+                &lt;/scrumboard-board-add-list&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Invisible router-outlet for ScrumboardCard component --&gt;
+&lt;div class&#x3D;&quot;absolute invisible w-0 h-0 opacity-0 pointer-events-none&quot;&gt;
+    &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./board.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.cdk-drag-preview {
+    @apply shadow-2xl;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drop-list-dragging div:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden">    <!-- Header -->    <div class="flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between p-6 sm:py-8 sm:px-10 border-b bg-card dark:bg-transparent">        <!-- Title -->        <div class="flex-1 min-w-0">            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate">                {{board.title}}            </h2>        </div>        <!-- Actions -->        <div class="flex shrink-0 items-center mt-6 sm:mt-0 sm:ml-4">            <a                mat-stroked-button                [routerLink]="[\'..\']">                <mat-icon                    class="icon-size-5"                    [svgIcon]="\'heroicons_solid:view-boards\'"></mat-icon>                <span class="ml-2">Boards</span>            </a>            <button                class="ml-3"                mat-stroked-button>                <mat-icon                    class="icon-size-5"                    [svgIcon]="\'heroicons_solid:cog\'"></mat-icon>                <span class="ml-2">Settings</span>            </button>        </div>    </div>    <!-- Main -->    <div        class="flex-auto p-6 sm:p-8 sm:pt-4 overflow-y-auto"        cdkScrollable>        <!-- Lists -->        <div            class="flex"            cdkDropList            [cdkDropListData]="board.lists"            [cdkDropListOrientation]="\'horizontal\'"            (cdkDropListDropped)="listDropped($event)">            <!-- Group all cdkDropList\'s after this point together so that the cards can be transferred between lists -->            <div                class="flex items-start"                cdkDropListGroup>                <!-- List -->                <ng-container *ngFor="let list of board.lists; trackBy: trackByFn">                    <div                        class="flex-0 w-72 p-2 rounded-2xl bg-default"                        cdkDrag                        [cdkDragLockAxis]="\'x\'">                        <div                            class="flex items-center justify-between"                            cdkDragHandle>                            <div class="flex items-center w-full py-2 px-3 rounded-md cursor-text border border-transparent focus-within:bg-white focus-within:shadow-sm focus-within:border-primary dark:focus-within:bg-gray-900">                                <input                                    class="w-full font-medium leading-5 bg-transparent"                                    [spellcheck]="\'false\'"                                    [value]="list.title"                                    (focusout)="updateListTitle($event, list)"                                    (keydown.enter)="listTitleInput.blur()"                                    #listTitleInput>                            </div>                            <div class="flex items-center justify-center min-w-6 ml-4 text-sm font-semibold leading-6 rounded-full bg-gray-300 text-secondary dark:bg-gray-700">                                {{list.cards.length}}                            </div>                            <div class="ml-1">                                <button                                    class="w-8 h-8 min-h-8"                                    mat-icon-button                                    [matMenuTriggerFor]="listMenu">                                    <mat-icon                                        class="icon-size-5"                                        [svgIcon]="\'heroicons_solid:dots-vertical\'"></mat-icon>                                </button>                                <mat-menu #listMenu="matMenu">                                    <button                                        mat-menu-item                                        (click)="renameList(listTitleInput)">                                        <mat-icon                                            class="icon-size-5"                                            [svgIcon]="\'heroicons_solid:pencil-alt\'"></mat-icon>                                        Rename list                                    </button>                                    <button                                        mat-menu-item                                        (click)="deleteList(list.id)">                                        <mat-icon                                            class="icon-size-5"                                            [svgIcon]="\'heroicons_solid:trash\'"></mat-icon>                                        Delete list                                    </button>                                </mat-menu>                            </div>                        </div>                        <!-- Cards -->                        <div class="mt-2 rounded-xl bg-gray-400 bg-opacity-12 dark:bg-transparent dark:border">                            <div                                [id]="list.id"                                class="p-3 pb-0"                                cdkDropList                                [cdkDropListData]="list.cards"                                (cdkDropListDropped)="cardDropped($event)">                                <!-- Card -->                                <ng-container *ngFor="let card of list.cards; trackBy: trackByFn">                                    <a                                        class="flex flex-col items-start mb-3 p-5 space-y-3 shadow rounded-lg overflow-hidden bg-card"                                        [routerLink]="[\'card\', card.id]"                                        cdkDrag>                                        <!-- Cover image -->                                        <ng-container *ngIf="card.coverImage">                                            <div class="-mx-5 -mt-5 mb-2">                                                <img                                                    class="w-full object-cover"                                                    [src]="card.coverImage">                                            </div>                                        </ng-container>                                        <!-- Title -->                                        <div class="text-lg font-medium leading-5">{{card.title}}</div>                                        <!-- Labels -->                                        <ng-container *ngIf="card.labels.length">                                            <div>                                                <div class="flex flex-wrap -mx-1 -mb-2">                                                    <ng-container *ngFor="let label of card.labels; trackBy: trackByFn">                                                        <div class="mx-1 mb-2 py-0.5 px-3 rounded-full text-sm font-medium text-gray-500 bg-gray-100 dark:text-gray-300 dark:bg-gray-700">                                                            {{label.title}}                                                        </div>                                                    </ng-container>                                                </div>                                            </div>                                        </ng-container>                                        <!-- Due date -->                                        <ng-container *ngIf="card.dueDate">                                            <div                                                class="flex items-center rounded text-sm font-medium leading-5 text-secondary"                                                [ngClass]="{\'text-red-600\': isOverdue(card.dueDate)}">                                                <mat-icon                                                    class="icon-size-4 text-current"                                                    [svgIcon]="\'heroicons_outline:clock\'"></mat-icon>                                                <div class="ml-1">                                                    {{card.dueDate | date: \'longDate\'}}                                                </div>                                            </div>                                        </ng-container>                                    </a>                                </ng-container>                            </div>                            <!-- New card -->                            <scrumboard-board-add-card                                (saved)="addCard(list, $event)"                                [buttonTitle]="list.cards.length ? \'Add another card\' : \'Add a card\'">                            </scrumboard-board-add-card>                        </div>                    </div>                </ng-container>                <!-- New list -->                <scrumboard-board-add-list                    (saved)="addList($event)"                    [buttonTitle]="board.lists.length ? \'Add another list\' : \'Add a list\'">                </scrumboard-board-add-list>            </div>        </div>    </div></div><!-- Invisible router-outlet for ScrumboardCard component --><div class="absolute invisible w-0 h-0 opacity-0 pointer-events-none">    <router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AcademyComponent', 'selector': 'academy'},{'name': 'AcademyDetailsComponent', 'selector': 'academy-details'},{'name': 'AcademyListComponent', 'selector': 'academy-list'},{'name': 'ActivitiesComponent', 'selector': 'activity'},{'name': 'AdvancedSearchComponent', 'selector': 'advanced-search'},{'name': 'AlertComponent', 'selector': 'alert'},{'name': 'AnalyticsComponent', 'selector': 'analytics'},{'name': 'AnimationsComponent', 'selector': 'animations'},{'name': 'ApexChartsComponent', 'selector': 'apex-charts'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthConfirmationRequiredComponent', 'selector': 'auth-confirmation-required'},{'name': 'AuthForgotPasswordComponent', 'selector': 'auth-forgot-password'},{'name': 'AuthResetPasswordComponent', 'selector': 'auth-reset-password'},{'name': 'AuthSignInComponent', 'selector': 'auth-sign-in'},{'name': 'AuthSignOutComponent', 'selector': 'auth-sign-out'},{'name': 'AuthSignUpComponent', 'selector': 'auth-sign-up'},{'name': 'AuthUnlockSessionComponent', 'selector': 'auth-unlock-session'},{'name': 'BankingAccountComponent', 'selector': 'app-banking-account'},{'name': 'CardComponent', 'selector': 'card'},{'name': 'CardedFullwidthContentScrollComponent', 'selector': 'carded-fullwidth-content-scroll'},{'name': 'CardedFullwidthNormalScrollComponent', 'selector': 'carded-fullwidth-normal-scroll'},{'name': 'CardedFullwidthPageScrollComponent', 'selector': 'carded-fullwidth-page-scroll'},{'name': 'CardedLeftSidebar1ContentScrollComponent', 'selector': 'carded-left-sidebar-1-content-scroll'},{'name': 'CardedLeftSidebar1NormalScrollComponent', 'selector': 'carded-left-sidebar-1-normal-scroll'},{'name': 'CardedLeftSidebar1PageScrollComponent', 'selector': 'carded-left-sidebar-1-page-scroll'},{'name': 'CardedLeftSidebar2ContentScrollComponent', 'selector': 'carded-left-sidebar-2-content-scroll'},{'name': 'CardedLeftSidebar2NormalScrollComponent', 'selector': 'carded-left-sidebar-2-normal-scroll'},{'name': 'CardedLeftSidebar2PageScrollComponent', 'selector': 'carded-left-sidebar-2-page-scroll'},{'name': 'CardedRightSidebar1ContentScrollComponent', 'selector': 'carded-right-sidebar-1-content-scroll'},{'name': 'CardedRightSidebar1NormalScrollComponent', 'selector': 'carded-right-sidebar-1-normal-scroll'},{'name': 'CardedRightSidebar1PageScrollComponent', 'selector': 'carded-right-sidebar-1-page-scroll'},{'name': 'CardedRightSidebar2ContentScrollComponent', 'selector': 'carded-right-sidebar-2-content-scroll'},{'name': 'CardedRightSidebar2NormalScrollComponent', 'selector': 'carded-right-sidebar-2-normal-scroll'},{'name': 'CardedRightSidebar2PageScrollComponent', 'selector': 'carded-right-sidebar-2-page-scroll'},{'name': 'CardsComponent', 'selector': 'cards'},{'name': 'CenteredLayoutComponent', 'selector': 'centered-layout'},{'name': 'ChangelogComponent', 'selector': 'changelog'},{'name': 'ChatComponent', 'selector': 'chat'},{'name': 'ChatsComponent', 'selector': 'chat-chats'},{'name': 'ClassicLayoutComponent', 'selector': 'classic-layout'},{'name': 'ClassyLayoutComponent', 'selector': 'classy-layout'},{'name': 'ColorsComponent', 'selector': 'colors'},{'name': 'ComingSoonClassicComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'CompactComponent', 'selector': 'compact'},{'name': 'CompactLayoutComponent', 'selector': 'compact-layout'},{'name': 'ComponentStructureComponent', 'selector': 'component-structure'},{'name': 'ComponentThemingComponent', 'selector': 'component-theming'},{'name': 'ConfigComponent', 'selector': 'config'},{'name': 'ConfirmationComponent', 'selector': 'confirmation'},{'name': 'ConfirmationDialogComponent', 'selector': 'confirmation'},{'name': 'ConfirmationRequiredClassicComponent', 'selector': 'confirmation-required-classic'},{'name': 'ConfirmationRequiredFullscreenComponent', 'selector': 'confirmation-required-fullscreen'},{'name': 'ConfirmationRequiredFullscreenReversedComponent', 'selector': 'confirmation-required-fullscreen-reversed'},{'name': 'ConfirmationRequiredModernComponent', 'selector': 'confirmation-required-modern'},{'name': 'ConfirmationRequiredModernReversedComponent', 'selector': 'confirmation-required-modern-reversed'},{'name': 'ConfirmationRequiredSplitScreenComponent', 'selector': 'confirmation-required-split-screen'},{'name': 'ConfirmationRequiredSplitScreenReversedComponent', 'selector': 'confirmation-required-split-screen-reversed'},{'name': 'ContactInfoComponent', 'selector': 'chat-contact-info'},{'name': 'ContactsComponent', 'selector': 'contacts'},{'name': 'ContactsDetailsComponent', 'selector': 'contacts-details'},{'name': 'ContactsListComponent', 'selector': 'contacts-list'},{'name': 'ConversationComponent', 'selector': 'chat-conversation'},{'name': 'CreditComponent', 'selector': 'app-credit'},{'name': 'CreditDetailsDialogComponent', 'selector': 'app-credit-details-dialog'},{'name': 'CryptoComponent', 'selector': 'crypto'},{'name': 'DatatableComponent', 'selector': 'datatable'},{'name': 'DemoPlaceholderComponent', 'selector': 'demo-placeholder'},{'name': 'DemoSidebarComponent', 'selector': 'demo-sidebar'},{'name': 'DenseLayoutComponent', 'selector': 'dense-layout'},{'name': 'DeploymentComponent', 'selector': 'deployment'},{'name': 'DirectoryStructureComponent', 'selector': 'directory-structure'},{'name': 'DrawerComponent', 'selector': 'drawer'},{'name': 'EmptyConversationComponent', 'selector': 'chat-empty-conversation'},{'name': 'EmptyLayoutComponent', 'selector': 'empty-layout'},{'name': 'EmptyNormalScrollComponent', 'selector': 'empty-normal-scroll'},{'name': 'EmptyPageScrollComponent', 'selector': 'empty-page-scroll'},{'name': 'EnterpriseLayoutComponent', 'selector': 'enterprise-layout'},{'name': 'Error404Component', 'selector': 'error-404'},{'name': 'Error500Component', 'selector': 'error-500'},{'name': 'FileManagerComponent', 'selector': 'file-manager'},{'name': 'FileManagerDetailsComponent', 'selector': 'file-manager-details'},{'name': 'FileManagerListComponent', 'selector': 'file-manager-list'},{'name': 'FinanceComponent', 'selector': 'finance'},{'name': 'FindByKeyComponent', 'selector': 'find-by-key'},{'name': 'ForgotPasswordClassicComponent', 'selector': 'forgot-password-classic'},{'name': 'ForgotPasswordFullscreenComponent', 'selector': 'forgot-password-fullscreen'},{'name': 'ForgotPasswordFullscreenReversedComponent', 'selector': 'forgot-password-fullscreen-reversed'},{'name': 'ForgotPasswordModernComponent', 'selector': 'forgot-password-modern'},{'name': 'ForgotPasswordModernReversedComponent', 'selector': 'forgot-password-modern-reversed'},{'name': 'ForgotPasswordSplitScreenComponent', 'selector': 'forgot-password-split-screen'},{'name': 'ForgotPasswordSplitScreenReversedComponent', 'selector': 'forgot-password-split-screen-reversed'},{'name': 'FormsFieldsComponent', 'selector': 'forms-fields'},{'name': 'FormsLayoutsComponent', 'selector': 'forms-layouts'},{'name': 'FormsWizardsComponent', 'selector': 'forms-wizards'},{'name': 'FullscreenComponent', 'selector': 'fullscreen'},{'name': 'FuseAlertComponent', 'selector': 'fuse-alert'},{'name': 'FuseCardComponent', 'selector': 'fuse-card'},{'name': 'FuseComponentsComponent', 'selector': 'fuse-components'},{'name': 'FuseConfirmationDialogComponent', 'selector': 'fuse-confirmation-dialog'},{'name': 'FuseDrawerComponent', 'selector': 'fuse-drawer'},{'name': 'FuseFullscreenComponent', 'selector': 'fuse-fullscreen'},{'name': 'FuseHighlightComponent', 'selector': 'textarea[fuse-highlight]'},{'name': 'FuseHorizontalNavigationBasicItemComponent', 'selector': 'fuse-horizontal-navigation-basic-item'},{'name': 'FuseHorizontalNavigationBranchItemComponent', 'selector': 'fuse-horizontal-navigation-branch-item'},{'name': 'FuseHorizontalNavigationComponent', 'selector': 'fuse-horizontal-navigation'},{'name': 'FuseHorizontalNavigationDividerItemComponent', 'selector': 'fuse-horizontal-navigation-divider-item'},{'name': 'FuseHorizontalNavigationSpacerItemComponent', 'selector': 'fuse-horizontal-navigation-spacer-item'},{'name': 'FuseLoadingBarComponent', 'selector': 'fuse-loading-bar'},{'name': 'FuseMasonryComponent', 'selector': 'fuse-masonry'},{'name': 'FuseVerticalNavigationAsideItemComponent', 'selector': 'fuse-vertical-navigation-aside-item'},{'name': 'FuseVerticalNavigationBasicItemComponent', 'selector': 'fuse-vertical-navigation-basic-item'},{'name': 'FuseVerticalNavigationCollapsableItemComponent', 'selector': 'fuse-vertical-navigation-collapsable-item'},{'name': 'FuseVerticalNavigationComponent', 'selector': 'fuse-vertical-navigation'},{'name': 'FuseVerticalNavigationDividerItemComponent', 'selector': 'fuse-vertical-navigation-divider-item'},{'name': 'FuseVerticalNavigationGroupItemComponent', 'selector': 'fuse-vertical-navigation-group-item'},{'name': 'FuseVerticalNavigationSpacerItemComponent', 'selector': 'fuse-vertical-navigation-spacer-item'},{'name': 'FuturisticLayoutComponent', 'selector': 'futuristic-layout'},{'name': 'GuidesComponent', 'selector': 'guides'},{'name': 'HelpCenterComponent', 'selector': 'help-center'},{'name': 'HelpCenterFaqsComponent', 'selector': 'help-center-faqs'},{'name': 'HelpCenterGuidesCategoryComponent', 'selector': 'help-center-guides-category'},{'name': 'HelpCenterGuidesComponent', 'selector': 'help-center-guides'},{'name': 'HelpCenterGuidesGuideComponent', 'selector': 'help-center-guides-guide'},{'name': 'HelpCenterSupportComponent', 'selector': 'help-center-support'},{'name': 'HighlightComponent', 'selector': 'highlight'},{'name': 'IconsComponent', 'selector': 'icons'},{'name': 'InstallationComponent', 'selector': 'installation'},{'name': 'InsuranceComponent', 'selector': 'app-insurance'},{'name': 'InsuranceDetailsComponent', 'selector': 'app-insurance-details'},{'name': 'InsuranceItemComponent', 'selector': 'insurance-item'},{'name': 'IntroductionComponent', 'selector': 'introduction'},{'name': 'InventoryComponent', 'selector': 'inventory'},{'name': 'InventoryListComponent', 'selector': 'inventory-list'},{'name': 'JwtComponent', 'selector': 'jwt'},{'name': 'LandingHomeComponent', 'selector': 'landing-home'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LayoutComponent', 'selector': 'layout'},{'name': 'LayoutOverviewComponent', 'selector': 'layout-overview'},{'name': 'LoadingBarComponent', 'selector': 'loading-bar'},{'name': 'MailboxComponent', 'selector': 'mailbox'},{'name': 'MailboxComposeComponent', 'selector': 'mailbox-compose'},{'name': 'MailboxDetailsComponent', 'selector': 'mailbox-details'},{'name': 'MailboxEmptyDetailsComponent', 'selector': 'mailbox-empty-details'},{'name': 'MailboxListComponent', 'selector': 'mailbox-list'},{'name': 'MailboxSettingsComponent', 'selector': 'mailbox-settings'},{'name': 'MailboxSidebarComponent', 'selector': 'mailbox-sidebar'},{'name': 'MaintenanceComponent', 'selector': 'maintenance'},{'name': 'MasonryComponent', 'selector': 'masonry'},{'name': 'MaterialComponentsComponent', 'selector': 'material-components'},{'name': 'MaterialLayoutComponent', 'selector': 'material-layout'},{'name': 'MediaWatcherComponent', 'selector': 'media-watcher'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MockApiComponent', 'selector': 'mock-api'},{'name': 'ModernComponent', 'selector': 'modern'},{'name': 'ModernLayoutComponent', 'selector': 'modern-layout'},{'name': 'MultiLanguageCustomizationComponent', 'selector': 'multi-language'},{'name': 'MustMatchComponent', 'selector': 'must-match'},{'name': 'NavigationComponent', 'selector': 'navigation'},{'name': 'NewChatComponent', 'selector': 'chat-new-chat'},{'name': 'NewTransactionFormComponent', 'selector': 'app-new-transaction-form'},{'name': 'NotesComponent', 'selector': 'notes'},{'name': 'NotesDetailsComponent', 'selector': 'notes-details'},{'name': 'NotesLabelsComponent', 'selector': 'notes-labels'},{'name': 'NotesListComponent', 'selector': 'notes-list'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OtherComponentsComponent', 'selector': 'other-components'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'PageLayoutsComponent', 'selector': 'page-layouts'},{'name': 'PrerequisitesComponent', 'selector': 'prerequisites'},{'name': 'PricingModernComponent', 'selector': 'pricing-modern'},{'name': 'PricingSimpleComponent', 'selector': 'pricing-simple'},{'name': 'PricingSingleComponent', 'selector': 'pricing-single'},{'name': 'PricingTableComponent', 'selector': 'pricing-table'},{'name': 'ProfileComponent', 'selector': 'profile'},{'name': 'ProfileComponent', 'selector': 'chat-profile'},{'name': 'ProjectComponent', 'selector': 'project'},{'name': 'QuickChatComponent', 'selector': 'quick-chat'},{'name': 'QuickChatComponent', 'selector': 'quick-chat'},{'name': 'QuillEditorComponent', 'selector': 'quill-editor'},{'name': 'ResetPasswordClassicComponent', 'selector': 'reset-password-classic'},{'name': 'ResetPasswordFullscreenComponent', 'selector': 'reset-password-fullscreen'},{'name': 'ResetPasswordFullscreenReversedComponent', 'selector': 'reset-password-fullscreen-reversed'},{'name': 'ResetPasswordModernComponent', 'selector': 'reset-password-modern'},{'name': 'ResetPasswordModernReversedComponent', 'selector': 'reset-password-modern-reversed'},{'name': 'ResetPasswordSplitScreenComponent', 'selector': 'reset-password-split-screen'},{'name': 'ResetPasswordSplitScreenReversedComponent', 'selector': 'reset-password-split-screen-reversed'},{'name': 'ScrollbarComponent', 'selector': 'scrollbar'},{'name': 'ScrollResetComponent', 'selector': 'scroll-reset'},{'name': 'ScrumboardBoardAddCardComponent', 'selector': 'scrumboard-board-add-card'},{'name': 'ScrumboardBoardAddListComponent', 'selector': 'scrumboard-board-add-list'},{'name': 'ScrumboardBoardComponent', 'selector': 'scrumboard-board'},{'name': 'ScrumboardBoardsComponent', 'selector': 'scrumboard-boards'},{'name': 'ScrumboardCardComponent', 'selector': 'scrumboard-card'},{'name': 'ScrumboardCardDetailsComponent', 'selector': 'scrumboard-card-details'},{'name': 'ScrumboardComponent', 'selector': 'scrumboard'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'ServingComponent', 'selector': 'serving'},{'name': 'SettingsAccountComponent', 'selector': 'settings-account'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsNotificationsComponent', 'selector': 'settings-notifications'},{'name': 'SettingsPlanBillingComponent', 'selector': 'settings-plan-billing'},{'name': 'SettingsSecurityComponent', 'selector': 'settings-security'},{'name': 'SettingsTeamComponent', 'selector': 'settings-team'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'SignInClassicComponent', 'selector': 'sign-in-classic'},{'name': 'SignInFullscreenComponent', 'selector': 'sign-in-fullscreen'},{'name': 'SignInFullscreenReversedComponent', 'selector': 'sign-in-fullscreen-reversed'},{'name': 'SignInModernComponent', 'selector': 'sign-in-modern'},{'name': 'SignInModernReversedComponent', 'selector': 'sign-in-modern-reversed'},{'name': 'SignInSplitScreenComponent', 'selector': 'sign-in-split-screen'},{'name': 'SignInSplitScreenReversedComponent', 'selector': 'sign-in-split-screen-reversed'},{'name': 'SignOutClassicComponent', 'selector': 'sign-out-classic'},{'name': 'SignOutFullscreenComponent', 'selector': 'sign-out-fullscreen'},{'name': 'SignOutFullscreenReversedComponent', 'selector': 'sign-out-fullscreen-reversed'},{'name': 'SignOutModernComponent', 'selector': 'sign-out-modern'},{'name': 'SignOutModernReversedComponent', 'selector': 'sign-out-modern-reversed'},{'name': 'SignOutSplitScreenComponent', 'selector': 'sign-out-split-screen'},{'name': 'SignOutSplitScreenReversedComponent', 'selector': 'sign-out-split-screen-reversed'},{'name': 'SignUpClassicComponent', 'selector': 'sign-up-classic'},{'name': 'SignUpFullscreenComponent', 'selector': 'sign-up-fullscreen'},{'name': 'SignUpFullscreenReversedComponent', 'selector': 'sign-up-fullscreen-reversed'},{'name': 'SignUpModernComponent', 'selector': 'sign-up-modern'},{'name': 'SignUpModernReversedComponent', 'selector': 'sign-up-modern-reversed'},{'name': 'SignUpSplitScreenComponent', 'selector': 'sign-up-split-screen'},{'name': 'SignUpSplitScreenReversedComponent', 'selector': 'sign-up-split-screen-reversed'},{'name': 'SimpleFullwidth1ContentScrollComponent', 'selector': 'simple-fullwidth-1-content-scroll'},{'name': 'SimpleFullwidth1NormalScrollComponent', 'selector': 'simple-fullwidth-1-normal-scroll'},{'name': 'SimpleFullwidth1PageScrollComponent', 'selector': 'simple-fullwidth-1-page-scroll'},{'name': 'SimpleFullwidth2ContentScrollComponent', 'selector': 'simple-fullwidth-2-content-scroll'},{'name': 'SimpleFullwidth2NormalScrollComponent', 'selector': 'simple-fullwidth-2-normal-scroll'},{'name': 'SimpleFullwidth2PageScrollComponent', 'selector': 'simple-fullwidth-2-page-scroll'},{'name': 'SimpleLeftSidebar1ContentScrollComponent', 'selector': 'simple-left-sidebar-1-content-scroll'},{'name': 'SimpleLeftSidebar1NormalScrollComponent', 'selector': 'simple-left-sidebar-1-normal-scroll'},{'name': 'SimpleLeftSidebar1PageScrollComponent', 'selector': 'simple-left-sidebar-1-page-scroll'},{'name': 'SimpleLeftSidebar2ContentScrollComponent', 'selector': 'simple-left-sidebar-2-content-scroll'},{'name': 'SimpleLeftSidebar2InnerScrollComponent', 'selector': 'simple-left-sidebar-2-inner-scroll'},{'name': 'SimpleLeftSidebar2NormalScrollComponent', 'selector': 'simple-left-sidebar-2-normal-scroll'},{'name': 'SimpleLeftSidebar2PageScrollComponent', 'selector': 'simple-left-sidebar-2-page-scroll'},{'name': 'SimpleLeftSidebar3NormalScrollComponent', 'selector': 'simple-left-sidebar-3-normal-scroll'},{'name': 'SimpleLeftSidebar3PageScrollComponent', 'selector': 'simple-left-sidebar-3-page-scroll'},{'name': 'SimpleLeftSidebar3ScrollComponent', 'selector': 'simple-left-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar1ContentScrollComponent', 'selector': 'simple-right-sidebar-1-content-scroll'},{'name': 'SimpleRightSidebar1NormalScrollComponent', 'selector': 'simple-right-sidebar-1-normal-scroll'},{'name': 'SimpleRightSidebar1PageScrollComponent', 'selector': 'simple-right-sidebar-1-page-scroll'},{'name': 'SimpleRightSidebar2ContentScrollComponent', 'selector': 'simple-right-sidebar-2-content-scroll'},{'name': 'SimpleRightSidebar2InnerScrollComponent', 'selector': 'simple-right-sidebar-2-inner-scroll'},{'name': 'SimpleRightSidebar2NormalScrollComponent', 'selector': 'simple-right-sidebar-2-normal-scroll'},{'name': 'SimpleRightSidebar2PageScrollComponent', 'selector': 'simple-right-sidebar-2-page-scroll'},{'name': 'SimpleRightSidebar3ContentScrollComponent', 'selector': 'simple-right-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar3NormalScrollComponent', 'selector': 'simple-right-sidebar-3-normal-scroll'},{'name': 'SimpleRightSidebar3PageScrollComponent', 'selector': 'simple-right-sidebar-3-page-scroll'},{'name': 'SplashScreenComponent', 'selector': 'splash-screen'},{'name': 'SplashScreenCustomizationComponent', 'selector': 'splash-screen'},{'name': 'StarterKitComponent', 'selector': 'starter-kit'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TasksComponent', 'selector': 'tasks'},{'name': 'TasksDetailsComponent', 'selector': 'tasks-details'},{'name': 'TasksListComponent', 'selector': 'tasks-list'},{'name': 'ThemeLayoutsComponent', 'selector': 'theme-layouts'},{'name': 'ThemingComponent', 'selector': 'theming'},{'name': 'ThinLayoutComponent', 'selector': 'thin-layout'},{'name': 'TransactionComponent', 'selector': 'app-transaction'},{'name': 'TransactionDetailsDialogComponent', 'selector': 'app-transaction-details-dialog'},{'name': 'TypographyComponent', 'selector': 'typography'},{'name': 'UnlockSessionClassicComponent', 'selector': 'unlock-session-classic'},{'name': 'UnlockSessionFullscreenComponent', 'selector': 'unlock-session-fullscreen'},{'name': 'UnlockSessionFullscreenReversedComponent', 'selector': 'unlock-session-fullscreen-reversed'},{'name': 'UnlockSessionModernComponent', 'selector': 'unlock-session-modern'},{'name': 'UnlockSessionModernReversedComponent', 'selector': 'unlock-session-modern-reversed'},{'name': 'UnlockSessionSplitScreenComponent', 'selector': 'unlock-session-split-screen'},{'name': 'UnlockSessionSplitScreenReversedComponent', 'selector': 'unlock-session-split-screen-reversed'},{'name': 'UpdatingComponent', 'selector': 'updating'},{'name': 'UserComponent', 'selector': 'user'},{'name': 'UserComponent', 'selector': 'user'}];
+    var DIRECTIVES = [{'name': 'FuseScrollbarDirective', 'selector': '[fuseScrollbar]'},{'name': 'FuseScrollResetDirective', 'selector': '[fuseScrollReset]'}];
+    var ACTUAL_COMPONENT = {'name': 'ScrumboardBoardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ScrumboardBoardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

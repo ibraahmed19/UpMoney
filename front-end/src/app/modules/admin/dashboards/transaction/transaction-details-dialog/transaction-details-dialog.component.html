@@ -1,0 +1,22 @@
+<h3 mat-dialog-title class="title-container">Transaction Details</h3>
+<mat-dialog-content>
+  <div class="table-container">
+    <table class="w-full">
+      <tr>
+        <td>Sender IBAN</td>
+        <td>{{ data.iban_sender }}</td>
+      </tr>
+      <tr>
+        <td>Receiver IBAN</td>
+        <td>{{ data.iban_receiver }}</td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td>{{ data.description }}</td>
+      </tr>
+    </table>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>

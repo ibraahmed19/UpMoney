@@ -1,0 +1,27 @@
+<div class="flex flex-col flex-auto md:w-140 md:min-w-140 -m-7">
+    <ng-container>
+        <!-- Image -->
+        <ng-container>
+            <div >
+                <img class="object-cover" *ngIf="'AUTO' === insuranceProduct.type"
+                    src="assets/images/apps/insurance/car-ins.jpg" alt="auto">
+                <img class="w-full object-cover" *ngIf="'HEALTH' === insuranceProduct.type"
+                    src="assets/images/apps/insurance/health-ins.jpg" alt="health">
+                <img class="w-full object-cover" *ngIf="'HOUSE' === insuranceProduct.type"
+                    src="assets/images/apps/insurance/house-ins.jpg" alt="house">
+                <img class="w-full object-cover" *ngIf="'LIFE' === insuranceProduct.type"
+                    src="assets/images/apps/insurance/life-ins.png" alt="life">
+
+            </div>
+        </ng-container>
+        <div class="m-4">
+            <div>
+                <a class="w-full p-2 text-2xl">{{insuranceProduct.name}}</a>
+            </div>
+            <div class="flex w-full py-5 px-2">
+                <a class="w-full">{{insuranceProduct.description}}</a>
+            </div>
+        </div>
+    </ng-container>
+
+</div>

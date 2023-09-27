@@ -1,0 +1,2487 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>fuse-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">fuse-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >ScrumboardService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/admin/apps/scrumboard/scrumboard.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_board" >_board</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_boards" >_boards</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_card" >_card</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createBoard" >createBoard</a>
+                            </li>
+                            <li>
+                                <a href="#createCard" >createCard</a>
+                            </li>
+                            <li>
+                                <a href="#createLabel" >createLabel</a>
+                            </li>
+                            <li>
+                                <a href="#createList" >createList</a>
+                            </li>
+                            <li>
+                                <a href="#deleteBoard" >deleteBoard</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCard" >deleteCard</a>
+                            </li>
+                            <li>
+                                <a href="#deleteLabel" >deleteLabel</a>
+                            </li>
+                            <li>
+                                <a href="#deleteList" >deleteList</a>
+                            </li>
+                            <li>
+                                <a href="#getBoard" >getBoard</a>
+                            </li>
+                            <li>
+                                <a href="#getBoards" >getBoards</a>
+                            </li>
+                            <li>
+                                <a href="#getCard" >getCard</a>
+                            </li>
+                            <li>
+                                <a href="#search" >search</a>
+                            </li>
+                            <li>
+                                <a href="#updateBoard" >updateBoard</a>
+                            </li>
+                            <li>
+                                <a href="#updateCard" >updateCard</a>
+                            </li>
+                            <li>
+                                <a href="#updateCardPositions" >updateCardPositions</a>
+                            </li>
+                            <li>
+                                <a href="#updateCards" >updateCards</a>
+                            </li>
+                            <li>
+                                <a href="#updateLabel" >updateLabel</a>
+                            </li>
+                            <li>
+                                <a href="#updateList" >updateList</a>
+                            </li>
+                            <li>
+                                <a href="#updateLists" >updateLists</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#board$" >board$</a>
+                                </li>
+                                <li>
+                                    <a href="#boards$" >boards$</a>
+                                </li>
+                                <li>
+                                    <a href="#card$" >card$</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_httpClient: <a href="../interfaces/Client.html" target="_self">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Client.html" target="_self" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBoard"></a>
+                    <span class="name">
+                        <span ><b>createBoard</b></span>
+                        <a href="#createBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createBoard(board: <a href="../classes/Board.html" target="_self">Board</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create board</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>board</td>
+                                    <td>
+                                                <code><a href="../classes/Board.html" target="_self" >Board</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCard"></a>
+                    <span class="name">
+                        <span ><b>createCard</b></span>
+                        <a href="#createCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createCard(card: <a href="../classes/Card.html" target="_self">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Observable&lt;Card&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createLabel"></a>
+                    <span class="name">
+                        <span ><b>createLabel</b></span>
+                        <a href="#createLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createLabel(label: <a href="../interfaces/Label.html" target="_self">Label</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="502"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:502</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                                <code><a href="../interfaces/Label.html" target="_self" >Label</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Label.html" target="_self" >Observable&lt;Label&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createList"></a>
+                    <span class="name">
+                        <span ><b>createList</b></span>
+                        <a href="#createList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createList(list: <a href="../classes/List.html" target="_self">List</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >List</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/List.html" target="_self" >Observable&lt;List&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteBoard"></a>
+                    <span class="name">
+                        <span ><b>deleteBoard</b></span>
+                        <a href="#deleteBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteBoard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the board</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCard"></a>
+                    <span class="name">
+                        <span ><b>deleteCard</b></span>
+                        <a href="#deleteCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="431"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:431</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteLabel"></a>
+                    <span class="name">
+                        <span ><b>deleteLabel</b></span>
+                        <a href="#deleteLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteLabel(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="559"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:559</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteList"></a>
+                    <span class="name">
+                        <span ><b>deleteList</b></span>
+                        <a href="#deleteList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteList(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="266"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:266</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBoard"></a>
+                    <span class="name">
+                        <span ><b>getBoard</b></span>
+                        <a href="#getBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBoard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get board</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBoards"></a>
+                    <span class="name">
+                        <span ><b>getBoards</b></span>
+                        <a href="#getBoards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBoards()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get boards</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCard"></a>
+                    <span class="name">
+                        <span ><b>getCard</b></span>
+                        <a href="#getCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="292"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:292</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Observable&lt;Card&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="search"></a>
+                    <span class="name">
+                        <span ><b>search</b></span>
+                        <a href="#search"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>search(query: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="602"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:602</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Search within board cards</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;[] | null&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBoard"></a>
+                    <span class="name">
+                        <span ><b>updateBoard</b></span>
+                        <a href="#updateBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateBoard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, board: <a href="../classes/Board.html" target="_self">Board</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the board</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>board</td>
+                                    <td>
+                                                <code><a href="../classes/Board.html" target="_self" >Board</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCard"></a>
+                    <span class="name">
+                        <span ><b>updateCard</b></span>
+                        <a href="#updateCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateCard(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, card: <a href="../classes/Card.html" target="_self">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="357"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:357</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Observable&lt;Card&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCardPositions"></a>
+                    <span class="name">
+                        <span ><b>updateCardPositions</b></span>
+                        <a href="#updateCardPositions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateCardPositions(cards: <a href="../classes/Card.html" target="_self">Card[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="466"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:466</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update card positions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cards</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCards"></a>
+                    <span class="name">
+                        <span ><b>updateCards</b></span>
+                        <a href="#updateCards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateCards(cards: <a href="../classes/Card.html" target="_self">Card[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="395"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:395</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the cards</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cards</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Observable&lt;Card[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateLabel"></a>
+                    <span class="name">
+                        <span ><b>updateLabel</b></span>
+                        <a href="#updateLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateLabel(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, label: <a href="../interfaces/Label.html" target="_self">Label</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="528"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:528</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                                <code><a href="../interfaces/Label.html" target="_self" >Label</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Label.html" target="_self" >Observable&lt;Label&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateList"></a>
+                    <span class="name">
+                        <span ><b>updateList</b></span>
+                        <a href="#updateList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateList(list: <a href="../classes/List.html" target="_self">List</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >List</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/List.html" target="_self" >Observable&lt;List&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateLists"></a>
+                    <span class="name">
+                        <span ><b>updateLists</b></span>
+                        <a href="#updateLists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateLists(lists: <a href="../classes/List.html" target="_self">List[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="233"
+                            class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the lists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lists</td>
+                                    <td>
+                                                <code><a href="../classes/List.html" target="_self" >List[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/List.html" target="_self" >Observable&lt;List[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_board"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_board</b></span>
+                        <a href="#_board"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Board.html" target="_self" >BehaviorSubject&lt;Board | null&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_boards"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_boards</b></span>
+                        <a href="#_boards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;[] | null&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_card"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_card</b></span>
+                        <a href="#_card"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >BehaviorSubject&lt;Card | null&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="board$"></a>
+                        <span class="name"><b>board$</b><a href="#board$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>board$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:36</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for board</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="boards$"></a>
+                        <span class="name"><b>boards$</b><a href="#boards$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>boards$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:44</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for boards</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../classes/Board.html" target="_self" >Observable&lt;Board[]&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="card$"></a>
+                        <span class="name"><b>card$</b><a href="#card$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>card$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/modules/admin/apps/scrumboard/scrumboard.service.ts:52</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for card</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Observable&lt;Card&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { BehaviorSubject, map, Observable, of, switchMap, take, tap, throwError } from &#x27;rxjs&#x27;;
+import { Board, Card, Label, List } from &#x27;app/modules/admin/apps/scrumboard/scrumboard.models&#x27;;
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class ScrumboardService
+{
+    // Private
+    private _board: BehaviorSubject&lt;Board | null&gt;;
+    private _boards: BehaviorSubject&lt;Board[] | null&gt;;
+    private _card: BehaviorSubject&lt;Card | null&gt;;
+
+    /**
+     * Constructor
+     */
+    constructor(
+        private _httpClient: HttpClient
+    )
+    {
+        // Set the private defaults
+        this._board &#x3D; new BehaviorSubject(null);
+        this._boards &#x3D; new BehaviorSubject(null);
+        this._card &#x3D; new BehaviorSubject(null);
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Accessors
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Getter for board
+     */
+    get board$(): Observable&lt;Board&gt;
+    {
+        return this._board.asObservable();
+    }
+
+    /**
+     * Getter for boards
+     */
+    get boards$(): Observable&lt;Board[]&gt;
+    {
+        return this._boards.asObservable();
+    }
+
+    /**
+     * Getter for card
+     */
+    get card$(): Observable&lt;Card&gt;
+    {
+        return this._card.asObservable();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Get boards
+     */
+    getBoards(): Observable&lt;Board[]&gt;
+    {
+        return this._httpClient.get&lt;Board[]&gt;(&#x27;api/apps/scrumboard/boards&#x27;).pipe(
+            map(response &#x3D;&gt; response.map(item &#x3D;&gt; new Board(item))),
+            tap(boards &#x3D;&gt; this._boards.next(boards))
+        );
+    }
+
+    /**
+     * Get board
+     *
+     * @param id
+     */
+    getBoard(id: string): Observable&lt;Board&gt;
+    {
+        return this._httpClient.get&lt;Board&gt;(&#x27;api/apps/scrumboard/board&#x27;, {params: {id}}).pipe(
+            map(response &#x3D;&gt; new Board(response)),
+            tap(board &#x3D;&gt; this._board.next(board))
+        );
+    }
+
+    /**
+     * Create board
+     *
+     * @param board
+     */
+    createBoard(board: Board): Observable&lt;Board&gt;
+    {
+        return this.boards$.pipe(
+            take(1),
+            switchMap(boards &#x3D;&gt; this._httpClient.put&lt;Board&gt;(&#x27;api/apps/scrumboard/board&#x27;, {board}).pipe(
+                map((newBoard) &#x3D;&gt; {
+
+                    // Update the boards with the new board
+                    this._boards.next([...boards, newBoard]);
+
+                    // Return new board from observable
+                    return newBoard;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update the board
+     *
+     * @param id
+     * @param board
+     */
+    updateBoard(id: string, board: Board): Observable&lt;Board&gt;
+    {
+        return this.boards$.pipe(
+            take(1),
+            switchMap(boards &#x3D;&gt; this._httpClient.patch&lt;Board&gt;(&#x27;api/apps/scrumboard/board&#x27;, {
+                id,
+                board
+            }).pipe(
+                map((updatedBoard) &#x3D;&gt; {
+
+                    // Find the index of the updated board
+                    const index &#x3D; boards.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Update the board
+                    boards[index] &#x3D; updatedBoard;
+
+                    // Update the boards
+                    this._boards.next(boards);
+
+                    // Return the updated board
+                    return updatedBoard;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Delete the board
+     *
+     * @param id
+     */
+    deleteBoard(id: string): Observable&lt;boolean&gt;
+    {
+        return this.boards$.pipe(
+            take(1),
+            switchMap(boards &#x3D;&gt; this._httpClient.delete(&#x27;api/apps/scrumboard/board&#x27;, {params: {id}}).pipe(
+                map((isDeleted: boolean) &#x3D;&gt; {
+
+                    // Find the index of the deleted board
+                    const index &#x3D; boards.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Delete the board
+                    boards.splice(index, 1);
+
+                    // Update the boards
+                    this._boards.next(boards);
+
+                    // Update the board
+                    this._board.next(null);
+
+                    // Update the card
+                    this._card.next(null);
+
+                    // Return the deleted status
+                    return isDeleted;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Create list
+     *
+     * @param list
+     */
+    createList(list: List): Observable&lt;List&gt;
+    {
+        return this._httpClient.post&lt;List&gt;(&#x27;api/apps/scrumboard/board/list&#x27;, {list}).pipe(
+            map(response &#x3D;&gt; new List(response)),
+            tap((newList) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Update the board lists with the new list
+                board.lists &#x3D; [...board.lists, newList];
+
+                // Sort the board lists
+                board.lists.sort((a, b) &#x3D;&gt; a.position - b.position);
+
+                // Update the board
+                this._board.next(board);
+            })
+        );
+    }
+
+    /**
+     * Update the list
+     *
+     * @param list
+     */
+    updateList(list: List): Observable&lt;List&gt;
+    {
+        return this._httpClient.patch&lt;List&gt;(&#x27;api/apps/scrumboard/board/list&#x27;, {list}).pipe(
+            map(response &#x3D;&gt; new List(response)),
+            tap((updatedList) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Find the index of the updated list
+                const index &#x3D; board.lists.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; list.id);
+
+                // Update the list
+                board.lists[index] &#x3D; updatedList;
+
+                // Sort the board lists
+                board.lists.sort((a, b) &#x3D;&gt; a.position - b.position);
+
+                // Update the board
+                this._board.next(board);
+            })
+        );
+    }
+
+    /**
+     * Update the lists
+     *
+     * @param lists
+     */
+    updateLists(lists: List[]): Observable&lt;List[]&gt;
+    {
+        return this._httpClient.patch&lt;List[]&gt;(&#x27;api/apps/scrumboard/board/lists&#x27;, {lists}).pipe(
+            map(response &#x3D;&gt; response.map(item &#x3D;&gt; new List(item))),
+            tap((updatedLists) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Go through the updated lists
+                updatedLists.forEach((updatedList) &#x3D;&gt; {
+
+                    // Find the index of the updated list
+                    const index &#x3D; board.lists.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; updatedList.id);
+
+                    // Update the list
+                    board.lists[index] &#x3D; updatedList;
+                });
+
+                // Sort the board lists
+                board.lists.sort((a, b) &#x3D;&gt; a.position - b.position);
+
+                // Update the board
+                this._board.next(board);
+            })
+        );
+    }
+
+    /**
+     * Delete the list
+     *
+     * @param id
+     */
+    deleteList(id: string): Observable&lt;boolean&gt;
+    {
+        return this._httpClient.delete&lt;boolean&gt;(&#x27;api/apps/scrumboard/board/list&#x27;, {params: {id}}).pipe(
+            tap((isDeleted) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Find the index of the deleted list
+                const index &#x3D; board.lists.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                // Delete the list
+                board.lists.splice(index, 1);
+
+                // Sort the board lists
+                board.lists.sort((a, b) &#x3D;&gt; a.position - b.position);
+
+                // Update the board
+                this._board.next(board);
+            })
+        );
+    }
+
+    /**
+     * Get card
+     */
+    getCard(id: string): Observable&lt;Card&gt;
+    {
+        return this._board.pipe(
+            take(1),
+            map((board) &#x3D;&gt; {
+
+                // Find the card
+                const card &#x3D; board.lists.find(list &#x3D;&gt; list.cards.some(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id))
+                                  .cards.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                // Update the card
+                this._card.next(card);
+
+                // Return the card
+                return card;
+            }),
+            switchMap((card) &#x3D;&gt; {
+
+                if ( !card )
+                {
+                    return throwError(&#x27;Could not found the card with id of &#x27; + id + &#x27;!&#x27;);
+                }
+
+                return of(card);
+            })
+        );
+    }
+
+    /**
+     * Create card
+     *
+     * @param card
+     */
+    createCard(card: Card): Observable&lt;Card&gt;
+    {
+        return this._httpClient.put&lt;Card&gt;(&#x27;api/apps/scrumboard/board/card&#x27;, {card}).pipe(
+            map(response &#x3D;&gt; new Card(response)),
+            tap((newCard) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Find the list and push the new card in it
+                board.lists.forEach((listItem, index, list) &#x3D;&gt; {
+                    if ( listItem.id &#x3D;&#x3D;&#x3D; newCard.listId )
+                    {
+                        list[index].cards.push(newCard);
+                    }
+                });
+
+                // Update the board
+                this._board.next(board);
+
+                // Return the new card
+                return newCard;
+            })
+        );
+    }
+
+    /**
+     * Update the card
+     *
+     * @param id
+     * @param card
+     */
+    updateCard(id: string, card: Card): Observable&lt;Card&gt;
+    {
+        return this.board$.pipe(
+            take(1),
+            switchMap(board &#x3D;&gt; this._httpClient.patch&lt;Card&gt;(&#x27;api/apps/scrumboard/board/card&#x27;, {
+                id,
+                card
+            }).pipe(
+                map((updatedCard) &#x3D;&gt; {
+
+                    // Find the card and update it
+                    board.lists.forEach((listItem) &#x3D;&gt; {
+                        listItem.cards.forEach((cardItem, index, array) &#x3D;&gt; {
+                            if ( cardItem.id &#x3D;&#x3D;&#x3D; id )
+                            {
+                                array[index] &#x3D; updatedCard;
+                            }
+                        });
+                    });
+
+                    // Update the board
+                    this._board.next(board);
+
+                    // Update the card
+                    this._card.next(updatedCard);
+
+                    // Return the updated card
+                    return updatedCard;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update the cards
+     *
+     * @param cards
+     */
+    updateCards(cards: Card[]): Observable&lt;Card[]&gt;
+    {
+        return this._httpClient.patch&lt;Card[]&gt;(&#x27;api/apps/scrumboard/board/cards&#x27;, {cards}).pipe(
+            map(response &#x3D;&gt; response.map(item &#x3D;&gt; new Card(item))),
+            tap((updatedCards) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Go through the updated cards
+                updatedCards.forEach((updatedCard) &#x3D;&gt; {
+
+                    // Find the index of the updated card&#x27;s list
+                    const listIndex &#x3D; board.lists.findIndex(list &#x3D;&gt; list.id &#x3D;&#x3D;&#x3D; updatedCard.listId);
+
+                    // Find the index of the updated card
+                    const cardIndex &#x3D; board.lists[listIndex].cards.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; updatedCard.id);
+
+                    // Update the card
+                    board.lists[listIndex].cards[cardIndex] &#x3D; updatedCard;
+
+                    // Sort the cards
+                    board.lists[listIndex].cards.sort((a, b) &#x3D;&gt; a.position - b.position);
+                });
+
+                // Update the board
+                this._board.next(board);
+            })
+        );
+    }
+
+    /**
+     * Delete the card
+     *
+     * @param id
+     */
+    deleteCard(id: string): Observable&lt;boolean&gt;
+    {
+        return this.board$.pipe(
+            take(1),
+            switchMap(board &#x3D;&gt; this._httpClient.delete(&#x27;api/apps/scrumboard/board/card&#x27;, {params: {id}}).pipe(
+                map((isDeleted: boolean) &#x3D;&gt; {
+
+                    // Find the card and delete it
+                    board.lists.forEach((listItem) &#x3D;&gt; {
+                        listItem.cards.forEach((cardItem, index, array) &#x3D;&gt; {
+                            if ( cardItem.id &#x3D;&#x3D;&#x3D; id )
+                            {
+                                array.splice(index, 1);
+                            }
+                        });
+                    });
+
+                    // Update the board
+                    this._board.next(board);
+
+                    // Update the card
+                    this._card.next(null);
+
+                    // Return the deleted status
+                    return isDeleted;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update card positions
+     *
+     * @param cards
+     */
+    updateCardPositions(cards: Card[]): void // Observable&lt;Card[]&gt;
+    {
+        /*return this._httpClient.patch&lt;Card[]&gt;(&#x27;api/apps/scrumboard/board/card/positions&#x27;, {cards}).pipe(
+            map((response) &#x3D;&gt; response.map((item) &#x3D;&gt; new Card(item))),
+            tap((updatedCards) &#x3D;&gt; {
+
+                // Get the board value
+                const board &#x3D; this._board.value;
+
+                // Find the card and update it
+                board.lists.forEach((listItem) &#x3D;&gt; {
+                    listItem.cards.forEach((cardItem, index, array) &#x3D;&gt; {
+                        if ( cardItem.id &#x3D;&#x3D;&#x3D; id )
+                        {
+                            array[index] &#x3D; updatedCard;
+                        }
+                    });
+                });
+
+                // Update the lists
+                board.lists &#x3D; updatedLists;
+
+                // Sort the board lists
+                board.lists.sort((a, b) &#x3D;&gt; a.position - b.position);
+
+                // Update the board
+                this._board.next(board);
+            })
+        );*/
+    }
+
+    /**
+     * Create label
+     *
+     * @param label
+     */
+    createLabel(label: Label): Observable&lt;Label&gt;
+    {
+        return this.board$.pipe(
+            take(1),
+            switchMap(board &#x3D;&gt; this._httpClient.post&lt;Label&gt;(&#x27;api/apps/scrumboard/board/label&#x27;, {label}).pipe(
+                map((newLabel) &#x3D;&gt; {
+
+                    // Update the board labels with the new label
+                    board.labels &#x3D; [...board.labels, newLabel];
+
+                    // Update the board
+                    this._board.next(board);
+
+                    // Return new label from observable
+                    return newLabel;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Update the label
+     *
+     * @param id
+     * @param label
+     */
+    updateLabel(id: string, label: Label): Observable&lt;Label&gt;
+    {
+        return this.board$.pipe(
+            take(1),
+            switchMap(board &#x3D;&gt; this._httpClient.patch&lt;Label&gt;(&#x27;api/apps/scrumboard/board/label&#x27;, {
+                id,
+                label
+            }).pipe(
+                map((updatedLabel) &#x3D;&gt; {
+
+                    // Find the index of the updated label
+                    const index &#x3D; board.labels.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Update the label
+                    board.labels[index] &#x3D; updatedLabel;
+
+                    // Update the board
+                    this._board.next(board);
+
+                    // Return the updated label
+                    return updatedLabel;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Delete the label
+     *
+     * @param id
+     */
+    deleteLabel(id: string): Observable&lt;boolean&gt;
+    {
+        return this.board$.pipe(
+            take(1),
+            switchMap(board &#x3D;&gt; this._httpClient.delete(&#x27;api/apps/scrumboard/board/label&#x27;, {params: {id}}).pipe(
+                map((isDeleted: boolean) &#x3D;&gt; {
+
+                    // Find the index of the deleted label
+                    const index &#x3D; board.labels.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+
+                    // Delete the label
+                    board.labels.splice(index, 1);
+
+                    // If the label is deleted...
+                    if ( isDeleted )
+                    {
+                        // Remove the label from any card that uses it
+                        board.lists.forEach((list) &#x3D;&gt; {
+                            list.cards.forEach((card) &#x3D;&gt; {
+                                const labelIndex &#x3D; card.labels.findIndex(label &#x3D;&gt; label.id &#x3D;&#x3D;&#x3D; id);
+                                if ( labelIndex &gt; -1 )
+                                {
+                                    card.labels.splice(labelIndex, 1);
+                                }
+                            });
+                        });
+                    }
+
+                    // Update the board
+                    this._board.next(board);
+
+                    // Return the deleted status
+                    return isDeleted;
+                })
+            ))
+        );
+    }
+
+    /**
+     * Search within board cards
+     *
+     * @param query
+     */
+    search(query: string): Observable&lt;Card[] | null&gt;
+    {
+        // @TODO: Update the board cards based on the search results
+        return this._httpClient.get&lt;Card[] | null&gt;(&#x27;api/apps/scrumboard/board/search&#x27;, {params: {query}});
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ScrumboardService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
