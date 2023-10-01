@@ -68,6 +68,12 @@ func (db Database) NewCredit(ctx *gin.Context) {
 		return
 	}
 
+	// update balance
+	if err := common.UpdateClientBalance(db.DB, new_credit.ClientID, new_credit.Amount); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }
 

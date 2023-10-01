@@ -47,3 +47,25 @@ func CheckClientExists(db *gorm.DB, id uint) bool {
 		return true
 	}
 }
+
+// update client balance
+func UpdateClientBalance(db *gorm.DB, id uint, amount float64) error {
+
+	// init vars
+	client := &Client{}
+
+	// get client's first bank account
+	if err := db.Where("client_id=?", id).First(&client).Error; err != nil {
+		return err
+	}
+
+	// update client's balance
+	client.BankingAccounts[0].Balance = client.BankingAccounts[0].Balance + amount
+
+	// update client's balance
+	if err := db.Where("id=?", client.BankingAccounts[0].ID).Updates(&client.BankingAccounts[0]).Error; err != nil {
+		return err
+	}
+
+	return nil
+}

@@ -67,6 +67,18 @@ func (db Database) NewTransaction(ctx *gin.Context) {
 		return
 	}
 
+	// add to Receiver's balance
+	if err := common.UpdateBalance(db.DB, new_transaction.IbanReceiver, new_transaction.Amount); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+
+	// subtract from Sender's balance
+	if err := common.UpdateBalance(db.DB, new_transaction.IbanSender, -new_transaction.Amount); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }
 

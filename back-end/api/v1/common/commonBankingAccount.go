@@ -37,3 +37,21 @@ func CheckBankingAccountExists(db *gorm.DB, id uint) bool {
 		return true
 	}
 }
+
+// update balance
+func UpdateBalance(db *gorm.DB, iban string, amount float64) error {
+
+	// init vars
+	bankingaccount := &BankingAccount{}
+
+	// get banking account
+	if err := db.Where("iban=?", iban).First(&bankingaccount).Error; err != nil {
+		return err
+	}
+
+	// update balance
+	bankingaccount.Balance += amount
+
+	// update banking account
+	return db.Save(&bankingaccount).Error
+}
