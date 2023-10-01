@@ -14,7 +14,7 @@ type Credit struct {
 	Type            string                  `gorm:"column:type;" json:"type"`
 	Amount          float64                 `gorm:"column:amount;" json:"amount"`
 	InterestRate    float64                 `gorm:"column:interest_rate;" json:"interest_rate"`
-	Duration        uint                    `gorm:"column:duration" json:"duration"`
+	Duration        string                    `gorm:"column:duration" json:"duration"`
 	StartDate       time.Time               `gorm:"column:start_date;not null" json:"start_date"`
 	EndDate         time.Time               `gorm:"column:end_date;not null" json:"end_date"`
 	MonthlyPayments float64                 `gorm:"column:monthly_payments;" json:"monthly_payments"`

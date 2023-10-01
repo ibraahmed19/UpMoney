@@ -152,7 +152,7 @@ func (db Database) UpdateCredit(ctx *gin.Context) {
 	}
 
 	// check values validity
-	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.ClientID < 1 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.Duration <= 0 || credit.StartDate.IsZero() || credit.EndDate.IsZero() || credit.MonthlyPayments <= 0 {
+	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.ClientID < 1 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.StartDate.IsZero() || credit.EndDate.IsZero() || credit.MonthlyPayments <= 0 {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "please complete all fields"})
 		return
 	}
