@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	common1 "template_rest_api/api/app/common"
 	"template_rest_api/api/app/role"
 	user "template_rest_api/api/app/user"
 	"template_rest_api/api/v1/common"
@@ -54,9 +55,11 @@ func (db Database) SignUpUser(ctx *gin.Context) {
 		City:      userToInsert.City,
 		ZipCode:   userToInsert.ZipCode,
 		Phone:     userToInsert.Phone,
-		Roles:     userToInsert.Roles,
 		LastLogin: userToInsert.LastLogin,
 	}
+
+	// Définir l'ID du rôle par défaut sur 1
+	new_user.Roles = []common1.Role{{ID: 1}}
 
 	role_id := new_user.Roles[0].ID
 	role, err := role.GetRoleByID(db.DB, uint(role_id))
@@ -65,6 +68,7 @@ func (db Database) SignUpUser(ctx *gin.Context) {
 		return
 	}
 	new_user.Roles = append(new_user.Roles, role)
+
 	// create user
 	//saved_user,
 	_, err = user.NewUser(db.DB, new_user)
@@ -72,14 +76,6 @@ func (db Database) SignUpUser(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
-
-	// var roles []string
-	// for _, role := range userToInsert.Roles {
-	// 	roles = append(roles, role.Name)
-	// }
-	// // super add will add role
-	// db.Enforcer.AddGroupingPolicy(strconv.FormatUint(uint64(saved_user.ID), 10), roles[0])
-
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }
 
