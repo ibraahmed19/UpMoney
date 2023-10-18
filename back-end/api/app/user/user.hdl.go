@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	common1 "template_rest_api/api/app/common"
+	"template_rest_api/api/app/role"
 	"template_rest_api/middleware"
 
 	"github.com/casbin/casbin/v2"
@@ -64,7 +65,6 @@ func (db Database) NewUser(ctx *gin.Context) {
 
 	// init new user
 	new_user := User{
-		ID:        0,
 		FirstName: user.FirstName,
 		LastName:  user.LastName,
 		Email:     user.Email,
@@ -82,6 +82,13 @@ func (db Database) NewUser(ctx *gin.Context) {
 		CreatedBy: session.UserID,
 	}
 
+	roledb, err := role.GetRoleByID(db.DB, user.Roles[0].ID)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	new_user.Roles = append(new_user.Roles, roledb)
+
 	// create user
 	if _, err := NewUser(db.DB, new_user); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
@@ -89,7 +96,7 @@ func (db Database) NewUser(ctx *gin.Context) {
 	}
 
 	// permission
-	db.Enforcer.AddGroupingPolicy(strconv.FormatUint(uint64(user.ID), 10), user.Roles)
+	db.Enforcer.AddGroupingPolicy(strconv.FormatUint(uint64(user.ID), 10), roledb.Name)
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }

@@ -88,6 +88,26 @@ func (db Database) SearchRoles(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, roles)
 }
 
+// get credit by id
+func (db Database) GetRoleByID(ctx *gin.Context) {
+	//get id value from path
+	role_id, err := strconv.Atoi(ctx.Param("id"))
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	if exists := CheckRoleExists(db.DB, uint(role_id)); !exists {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": "invalid role id"})
+		return
+	}
+	role, err := GetRoleByID(db.DB, uint(role_id))
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	ctx.JSON(http.StatusOK, role)
+}
+
 // update role
 func (db Database) UpdateRole(ctx *gin.Context) {
 

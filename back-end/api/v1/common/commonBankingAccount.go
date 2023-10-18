@@ -10,7 +10,7 @@ type BankingAccount struct {
 	ID uint `gorm:"primaryKey;autoIncrement;column:id;unique;" json:"id"`
 	// BankID       uint      `gorm:"column:bank_id" json:"bank_id"`
 	Transactions []Transaction `gorm:"foreignKey:IdBankingAccount;references:ID"`
-	ClientID     uint          `gorm:"column:client_id" json:"client_id"`
+	UserID       uint          `gorm:"column:user_id" json:"user_id"`
 	Iban         string        `gorm:"column:iban;not null;unique" json:"iban"`
 	Balance      float64       `gorm:"column:balance;" json:"balance"`
 	Type         string        `gorm:"column:type;not null" json:"type"`
@@ -27,6 +27,24 @@ func CheckBankingAccountExists(db *gorm.DB, id uint) bool {
 
 	// check if row exists
 	check := db.Where("id=?", id).First(&bankingaccount)
+	if check.Error != nil {
+		return false
+	}
+
+	if check.RowsAffected == 0 {
+		return false
+	} else {
+		return true
+	}
+}
+
+func CheckBankingAccountExistsByIban(db *gorm.DB, Iban string) bool {
+
+	// init vars
+	bankingaccount := &BankingAccount{}
+
+	// check if row exists
+	check := db.Where("iban=?", Iban).First(&bankingaccount)
 	if check.Error != nil {
 		return false
 	}

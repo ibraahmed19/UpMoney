@@ -5,7 +5,6 @@ import (
 	"os"
 	"strconv"
 	common1 "template_rest_api/api/app/common"
-	"template_rest_api/api/app/insurance"
 	"template_rest_api/api/app/user"
 	"template_rest_api/api/v1/common"
 	insuranceproduct "template_rest_api/api/v1/insuranceProduct"
@@ -33,9 +32,9 @@ func _auto_migrate_tables(db *gorm.DB) {
 		&common1.Role{},
 		// &common1.Bank{},
 		// &bill.Bill{},
-		&common.Client{},
 		&message.Message{},
 		&common.Credit{},
+
 		// &creditrequest.CreditRequest{},
 		// &deposit.Deposit{},
 		// &insurance.Insurance{},
@@ -43,8 +42,8 @@ func _auto_migrate_tables(db *gorm.DB) {
 		// &insurancerequest.InsuranceRequest{},
 		&simulation.Simulation{},
 		&paymee.Payment{},
-		&common.Transaction{},
 		&common.BankingAccount{},
+		&common.Transaction{},
 		//&simulationcredit.SimulationCredit{},
 		//&creditrequestcredit.CreditRequestCredit{},
 		//&insurancepolicy.InsurancePolicy{},
@@ -88,50 +87,8 @@ func _create_root_user(db *gorm.DB, enforcer *casbin.Enforcer) {
 	var user_id uint
 	root_role := common1.Role{}
 	root_user := user.User{}
-	root_bank := common1.Bank{}
-	root_insurance := insurance.Insurance{}
 	// default role
 	user_role := common1.Role{}
-
-	// create bank
-	// check bank exists
-	if check := db.Where("name=?", os.Getenv("DEFAULT_BANK_NAME")).Find(&root_bank); check.RowsAffected == 0 && check.Error == nil {
-
-		// create bank
-		root_bank := common1.Bank{Name: os.Getenv("DEFAULT_BANK_NAME"), Address: os.Getenv("DEFAULT_BANK_ADDRESS"), City: os.Getenv("DEFAULT_BANK_CITY"), Country: os.Getenv("DEFAULT_BANK_COUNTRY"), Phone: os.Getenv("DEFAULT_BANK_PHONE"), Email: os.Getenv("DEFAULT_BANK_EMAIL"), Contact: os.Getenv("DEFAULT_BANK_CONTACT"), Comments: os.Getenv("DEFAULT_BANK_COMMENTS"), ManagedBy: user_id, CreatedBy: user_id}
-		err := db.Create(&root_bank).Error
-		if err != nil {
-			panic(fmt.Sprintf("[WARNING] error while creating the root bank: %v", err))
-		}
-
-		// edit user to add bank id
-		if check := db.Where("email=?", os.Getenv("DEFAULT_EMAIL")).Find(&root_user); check.RowsAffected == 1 && check.Error == nil {
-			// root_user.BankID = root_bank.ID
-			if update := db.Where("id=?", root_user.ID).Updates(&root_user); update.Error != nil {
-				panic(fmt.Sprintf("[WARNING] error while updating the root user: %v", update.Error))
-			}
-		}
-	}
-
-	// create insurance
-	// check insurance exists
-	if check := db.Where("name=?", os.Getenv("DEFAULT_INSURANCE_NAME")).Find(&root_insurance); check.RowsAffected == 0 && check.Error == nil {
-
-		// create bank
-		root_insurance := insurance.Insurance{Name: os.Getenv("DEFAULT_INSURANCE_NAME"), Type: os.Getenv("DEFAULT_INSURANCE_TYPE"), Address: os.Getenv("DEFAULT_INSURANCE_ADDRESS"), Phone: os.Getenv("DEFAULT_INSURANCE_PHONE"), Email: os.Getenv("DEFAULT_INSURANCE_EMAIL"), Description: os.Getenv("DEFAULT_INSURANCE_Description"), ManagedBy: user_id, CreatedBy: user_id}
-		err := db.Create(&root_insurance).Error
-		if err != nil {
-			panic(fmt.Sprintf("[WARNING] error while creating the root insurance: %v", err))
-		}
-
-		// edit user to add bank id
-		if check := db.Where("email=?", os.Getenv("DEFAULT_EMAIL")).Find(&root_user); check.RowsAffected == 1 && check.Error == nil {
-			// root_user.InsuranceID = root_insurance.ID
-			if update := db.Where("id=?", root_user.ID).Updates(&root_user); update.Error != nil {
-				panic(fmt.Sprintf("[WARNING] error while updating the root user: %v", update.Error))
-			}
-		}
-	}
 
 	// create root role
 	// check root role exists

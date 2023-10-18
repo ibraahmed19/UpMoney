@@ -1,6 +1,7 @@
 package insuranceproduct
 
 import (
+	"template_rest_api/api/v1/common"
 	"template_rest_api/api/v1/paymee"
 
 	"gorm.io/gorm"
@@ -11,6 +12,7 @@ type InsuranceProduct struct {
 	// IdInsurance       uint                `gorm:"column:id_insurance;" json:"id_insurance"`
 	// Insurance         insurance.Insurance `gorm:"foreignkey:IdInsurance;references:ID" json:"insurance"`
 	Payments          []paymee.Payment `gorm:"foreignKey:InsuranceProductID;references:ID"`
+	Users             []common.User    `gorm:"many2many:userInsuranceProduct"`
 	Name              string           `gorm:"column:name;not null;" json:"name"`
 	Type              string           `gorm:"column:type;not null;" json:"type"`
 	Description       string           `gorm:"column:description;not null;" json:"description"`

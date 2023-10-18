@@ -21,10 +21,15 @@ func GetBankingAccountByID(db *gorm.DB, id uint) (bankingaccount common.BankingA
 	return bankingaccount, db.Find(&bankingaccount, "id=?", id).Error
 }
 
-//get banking accounts by client id
-func GetBankingAccountsByClientId(db *gorm.DB, client_id uint) ([]common.BankingAccount, error) {
+// get baking account by iban
+func GetBankingAccountByIban(db *gorm.DB, iban string) (bankingaccount common.BankingAccount, err error) {
+	return bankingaccount, db.Find(&bankingaccount, "iban=?", iban).Error
+}
+
+// get banking accounts by user id
+func GetBankingAccountsByUserId(db *gorm.DB, user_id uint) ([]common.BankingAccount, error) {
 	var bankingAccounts []common.BankingAccount
-	if err := db.Where("client_id = ?", client_id).Find(&bankingAccounts).Error; err != nil {
+	if err := db.Where("user_id = ?", user_id).Find(&bankingAccounts).Error; err != nil {
 		return nil, err
 	}
 	return bankingAccounts, nil

@@ -5,6 +5,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	bankingaccount "template_rest_api/api/v1/bankingAccount"
 	"template_rest_api/api/v1/common"
 	"template_rest_api/middleware"
 
@@ -32,13 +33,13 @@ func (db Database) NewCredit(ctx *gin.Context) {
 	}
 
 	// // check fields
-	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.ClientID == 0 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.MonthlyPayments <= 0 || credit.EndDate.IsZero() || credit.StartDate.IsZero() {
+	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.UserID == 0 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.MonthlyPayments <= 0 || credit.EndDate.IsZero() || credit.StartDate.IsZero() {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "invalid fields"})
 		return
 	}
 
 	// check if client exists
-	if exists := common.CheckClientExists(db.DB, credit.ClientID); !exists {
+	if exists := common.CheckUserExists(db.DB, credit.UserID); !exists {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "client does not exist"})
 		return
 	}
@@ -48,7 +49,7 @@ func (db Database) NewCredit(ctx *gin.Context) {
 
 	// init new credit
 	new_credit := common.Credit{
-		ClientID:        credit.ClientID,
+		UserID:        credit.UserID,
 		Type:            credit.Type,
 		Amount:          credit.Amount,
 		InterestRate:    credit.InterestRate,
@@ -69,10 +70,10 @@ func (db Database) NewCredit(ctx *gin.Context) {
 	}
 
 	// update balance
-	if err := common.UpdateClientBalance(db.DB, new_credit.ClientID, new_credit.Amount); err != nil {
+	/*if err := common.UpdateClientBalance(db.DB, new_credit.ClientID, new_credit.Amount); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
-	}
+	}*/
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }
@@ -152,7 +153,7 @@ func (db Database) UpdateCredit(ctx *gin.Context) {
 	}
 
 	// check values validity
-	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.ClientID < 1 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.StartDate.IsZero() || credit.EndDate.IsZero() || credit.MonthlyPayments <= 0 {
+	if empty_reg.MatchString(credit.Type) || empty_reg.MatchString(credit.Status) || empty_reg.MatchString(credit.Comments) || credit.UserID < 1 || credit.Amount <= 0 || credit.InterestRate <= 0 || credit.StartDate.IsZero() || credit.EndDate.IsZero() || credit.MonthlyPayments <= 0 {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "please complete all fields"})
 		return
 	}
@@ -162,6 +163,11 @@ func (db Database) UpdateCredit(ctx *gin.Context) {
 
 	// update credit
 	if err = UpdateCredit(db.DB, credit); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	// update balance
+	if err := bankingaccount.UpdateClientBalance(db.DB, credit.UserID, credit.Amount); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}

@@ -45,6 +45,25 @@ func main() {
 	}
 
 	fmt.Println("URL de paiement:", paymentURL)
+
+	// c := cron.New()
+
+	// // Utilisez une fonction anonyme pour envelopper l'appel à ProcessStandingOrders.
+	// err = c.AddFunc("0 * * * * *", func() { // 0 * * * * *   0 0 4 * * *
+	// 	transaction.ProcessStandingOrders
+	// })
+
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
+	// c.Start()
+
 	// Run Gin server
 	r.Run(":8080")
+	// select {}
 }
+
+// func ProcessStandingOrders(){
+// 	transaction.ProcessStandingOrders()
+// }

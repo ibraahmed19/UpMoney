@@ -1,12 +1,15 @@
 package bankingaccount
 
 import (
+	"fmt"
+	"math/rand"
 	"net/http"
 	"os"
 	"regexp"
 	"strconv"
 	"template_rest_api/api/v1/common"
 	"template_rest_api/middleware"
+	"time"
 
 	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
@@ -32,14 +35,14 @@ func (db Database) NewBankingAccount(ctx *gin.Context) {
 	}
 
 	// check fields
-	if empty_reg.MatchString(bankingaccount.Type) || empty_reg.MatchString(bankingaccount.Iban) || bankingaccount.OpenningDate.IsZero() {
+	if empty_reg.MatchString(bankingaccount.Type) {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "invalid fields"})
 		return
 	}
 
-	// check if client exists
-	if exists := common.CheckClientExists(db.DB, bankingaccount.ClientID); !exists {
-		ctx.JSON(http.StatusBadRequest, gin.H{"message": "client does not exist"})
+	// check if user exists
+	if exists := common.CheckUserExists(db.DB, bankingaccount.UserID); !exists {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": "user does not exist"})
 		return
 	}
 
@@ -55,14 +58,22 @@ func (db Database) NewBankingAccount(ctx *gin.Context) {
 	// init new bankingaccount
 	new_bankingaccount := common.BankingAccount{
 		// BankID:       bankingaccount.BankID,
-		ClientID:     bankingaccount.ClientID,
-		Iban:         bankingaccount.Iban,
-		Balance:      bankingaccount.Balance,
+		UserID:       bankingaccount.UserID,
+		Balance:      0,
 		Type:         bankingaccount.Type,
-		OpenningDate: bankingaccount.OpenningDate,
+		OpenningDate: time.Now(),
 		// Transactions: bankingaccount.Transactions,
 		CreatedBy: session.UserID,
 	}
+
+	rand.Seed(time.Now().UnixNano())
+	card := "TN"
+	for i := 0; i < 14; i++ {
+		n := rand.Intn(10)
+		card += fmt.Sprint(n)
+	}
+
+	new_bankingaccount.Iban = card
 
 	// create new bankingaccount
 	_, err := NewBankingAccount(db.DB, new_bankingaccount)
@@ -107,7 +118,7 @@ func (db Database) GetBankingAccountByID(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, bankingaccountId)
 }
 
-// Get banking accounts By client  ID
+// Get banking accounts By user  ID
 func (db Database) GetBankingAccountsByClientId(ctx *gin.Context) {
 
 	// extract client ID from request parameters
@@ -118,7 +129,7 @@ func (db Database) GetBankingAccountsByClientId(ctx *gin.Context) {
 	}
 
 	// get banking accounts associated with the given cleint ID
-	bankingAccounts, err := GetBankingAccountsByClientId(db.DB, uint(client_id))
+	bankingAccounts, err := GetBankingAccountsByUserId(db.DB, uint(client_id))
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
@@ -186,7 +197,39 @@ func (db Database) UpdateBankingAccount(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "updated"})
 }
+func UpdateClientBalance(db *gorm.DB, id uint, amount float64) error {
 
+	// init vars
+	user := &common.User{}
+
+	// get client's first bank account
+	if err := db.Where("id=?", id).First(&user).Error; err != nil {
+		return err
+	}
+
+	var bankingAccounts []common.BankingAccount
+	if err := db.Where("user_id = ?", id).Find(&bankingAccounts).Error; err != nil {
+		return nil
+	}
+
+	var currentBankingAccount common.BankingAccount
+	for _, bankingAccount := range bankingAccounts {
+
+		if bankingAccount.Type == "current" {
+			currentBankingAccount = bankingAccount
+			break
+		}
+	}
+
+	currentBankingAccount.Balance = currentBankingAccount.Balance + amount
+
+	// update client's balance
+	if err := db.Where("id=?", currentBankingAccount.ID).Updates(currentBankingAccount).Error; err != nil {
+		return err
+	}
+
+	return nil
+}
 func (db Database) DeleteBankingAccount(ctx *gin.Context) {
 
 	// get id from path

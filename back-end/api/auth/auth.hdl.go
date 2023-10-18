@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"os"
 	"regexp"
-	"strconv"
-	common1 "template_rest_api/api/app/common"
+	"template_rest_api/api/app/role"
 	user "template_rest_api/api/app/user"
+	"template_rest_api/api/v1/common"
 	"template_rest_api/middleware"
 	"time"
 
@@ -24,44 +24,61 @@ type Database struct {
 func (db Database) SignUpUser(ctx *gin.Context) {
 
 	// init vars
-	var account InsertUser
+	var userToInsert common.User
 	empty_reg, _ := regexp.Compile(os.Getenv("EMPTY_REGEX"))
 
 	// upmarshal sent json
-	if err := ctx.ShouldBindJSON(&account); err != nil {
+	if err := ctx.ShouldBindJSON(&userToInsert); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
 
 	// check field validity
-	if empty_reg.MatchString(account.Name) || empty_reg.MatchString(account.Email) || empty_reg.MatchString(account.Password) {
+	if empty_reg.MatchString(userToInsert.Username) || empty_reg.MatchString(userToInsert.Email) || empty_reg.MatchString(userToInsert.Password) {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "please complete all fields"})
 		return
 	}
 
 	// hash password
-	user.HashPassword(&account.Password)
+	user.HashPassword(&userToInsert.Password)
 
-	new_role := common1.Role{
-		Name: "user",
-	}
 	// create new user
 	new_user := user.User{
-		Email:    account.Email,
-		Password: account.Password,
-
-		Roles: []common1.Role{new_role},
+		FirstName: userToInsert.FirstName,
+		LastName:  userToInsert.LastName,
+		Email:     userToInsert.Email,
+		Username:  userToInsert.Username,
+		Password:  userToInsert.Password,
+		Adress:    userToInsert.Adress,
+		Country:   userToInsert.Country,
+		City:      userToInsert.City,
+		ZipCode:   userToInsert.ZipCode,
+		Phone:     userToInsert.Phone,
+		Roles:     userToInsert.Roles,
+		LastLogin: userToInsert.LastLogin,
 	}
 
+	role_id := new_user.Roles[0].ID
+	role, err := role.GetRoleByID(db.DB, uint(role_id))
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	new_user.Roles = append(new_user.Roles, role)
 	// create user
-	saved_user, err := user.NewUser(db.DB, new_user)
+	//saved_user,
+	_, err = user.NewUser(db.DB, new_user)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
 
-	// super add will add role
-	db.Enforcer.AddGroupingPolicy(strconv.FormatUint(uint64(saved_user.ID), 10), saved_user.Roles)
+	// var roles []string
+	// for _, role := range userToInsert.Roles {
+	// 	roles = append(roles, role.Name)
+	// }
+	// // super add will add role
+	// db.Enforcer.AddGroupingPolicy(strconv.FormatUint(uint64(saved_user.ID), 10), roles[0])
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }

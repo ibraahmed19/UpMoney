@@ -19,11 +19,12 @@ func GetRole(db *gorm.DB, name string) error {
 	return db.Where("name=?", name).First(&role).Error
 }
 
-// // get role by ID
-// func GetRoleByID(db *gorm.DB, id uint) (Role, error) {
-// 	role := Role{}
-// 	return role, db.Where("id=?", id).First(&role).Error
-// }
+
+// get role by id
+func GetRoleByID(db *gorm.DB, id uint) (role common1.Role, err error) {
+	return role, db.Find(&role, "id=?", id).Error
+}
+
 
 // check if role exists
 func CheckRoleExists(db *gorm.DB, id uint) bool {
@@ -55,3 +56,7 @@ func UpdateRole(db *gorm.DB, role common1.Role) error {
 func DeleteRole(db *gorm.DB, role_id uint) error {
 	return db.Where("id=?", role_id).Delete(&common1.Role{}).Error
 }
+
+
+
+

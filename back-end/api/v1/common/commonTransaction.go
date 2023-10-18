@@ -13,25 +13,24 @@ type Transaction struct {
 	IbanSender    string            `gorm:"column:iban_sender;not null" json:"iban_sender"`
 	IbanReceiver  string            `gorm:"column:iban_receiver;not null" json:"iban_receiver"`
 	Type          TransactionType   `gorm:"column:type;" json:"type"`
-	Status        TransactionStatus `gorm:"column:status;" json:"status"`
+	//Status        TransactionStatus `gorm:"column:status;" json:"status"`
 	Amount        float64           `gorm:"column:amount;" json:"amount"`
-	Fee           float64           `gorm:"column:fee;" json:"fee"`
 	ExecutionDate time.Time         `gorm:"column:execution_date" json:"execution_date"`
 	Description   string            `gorm:"column:description;" json:"description"`
 	CreatedBy     uint              `gorm:"column:created_by" json:"created_by"`
 	gorm.Model
 }
 
-type TransactionType string
+type TransactionType string	
 
 const (
-	Bill    TransactionType = "bill"
-	Deposit TransactionType = "deposit"
+	Bill    TransactionType = "Transfer"
+	Deposit TransactionType = "StandingOrder"
 )
 
 type TransactionStatus string
 
 const (
-	Created    TransactionStatus = "created"
+	Created   TransactionStatus = "created"
 	Completed TransactionStatus = "completed"
 )

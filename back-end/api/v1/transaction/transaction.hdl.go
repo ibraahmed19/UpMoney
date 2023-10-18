@@ -5,6 +5,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	bankingaccount "template_rest_api/api/v1/bankingAccount"
 	"template_rest_api/api/v1/common"
 	"template_rest_api/middleware"
 
@@ -32,53 +33,64 @@ func (db Database) NewTransaction(ctx *gin.Context) {
 	}
 
 	// check fields
-	if empty_reg.MatchString(transaction.IbanSender) || empty_reg.MatchString(transaction.IbanReceiver) || empty_reg.MatchString(string(transaction.Type)) || empty_reg.MatchString(string(transaction.Status)) || empty_reg.MatchString(transaction.Description) { //|| transaction.Amount <= 0 || transaction.Fee <= 0 || transaction.ExecutionDate.IsZero() {
+	if empty_reg.MatchString(transaction.IbanSender) || empty_reg.MatchString(transaction.IbanReceiver) || empty_reg.MatchString(string(transaction.Type)) || empty_reg.MatchString(transaction.Description) { //|| transaction.Amount <= 0 || transaction.Fee <= 0 || transaction.ExecutionDate.IsZero() {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "invalid fields"})
 		return
 	}
 
 	//check if BankingAccount exists
-	if exists := common.CheckBankingAccountExists(db.DB, transaction.IdBankingAccount); !exists {
+	if exists := common.CheckBankingAccountExistsByIban(db.DB, transaction.IbanSender); !exists {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "Banking Account does not exist"})
 		return
 	}
 
-	// get values from session
-	session := middleware.ExtractTokenValues(ctx)
-
-	// init new transaction
-	new_transaction := common.Transaction{
-		IdBankingAccount: transaction.IdBankingAccount,
-		IbanSender:       transaction.IbanSender,
-		IbanReceiver:     transaction.IbanReceiver,
-		Type:             transaction.Type,
-		Status:           transaction.Status,
-		Amount:           transaction.Amount,
-		Fee:              transaction.Fee,
-		ExecutionDate:    transaction.ExecutionDate,
-		Description:      transaction.Description,
-		CreatedBy:        session.UserID,
-	}
-
-	// create new transaction
-	_, err := NewTransaction(db.DB, new_transaction)
+	accountSender, err := bankingaccount.GetBankingAccountByIban(db.DB, transaction.IbanSender)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
+	defaultFee := os.Getenv("FEE")
+
+	fee, err := strconv.ParseFloat(defaultFee, 64) // 64 est la taille des bits de précision, adaptez-la à vos besoins
+	println("feeeeee is : ", fee)
+	if accountSender.Balance < (transaction.Amount * fee) {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": "you don't have the required amount"})
+		return
+	}
 
 	// add to Receiver's balance
-	if err := common.UpdateBalance(db.DB, new_transaction.IbanReceiver, new_transaction.Amount); err != nil {
+	if err := common.UpdateBalance(db.DB, transaction.IbanReceiver, transaction.Amount); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
 
 	// subtract from Sender's balance
-	if err := common.UpdateBalance(db.DB, new_transaction.IbanSender, -new_transaction.Amount); err != nil {
+	if err := common.UpdateBalance(db.DB, transaction.IbanSender, -transaction.Amount*fee); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
 
+	// get values from session
+	session := middleware.ExtractTokenValues(ctx)
+	// init new transaction
+	new_transaction := common.Transaction{
+		IdBankingAccount: accountSender.ID,
+		IbanSender:       transaction.IbanSender,
+		IbanReceiver:     transaction.IbanReceiver,
+		Type:             transaction.Type,
+		//Status:           transaction.Status,
+		Amount: transaction.Amount,
+		//Fee:              transaction.Fee,
+		ExecutionDate: transaction.ExecutionDate,
+		Description:   transaction.Description,
+		CreatedBy:     session.UserID,
+	}
+	// create new transaction
+	_, err = NewTransaction(db.DB, new_transaction)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
 	ctx.JSON(http.StatusOK, gin.H{"message": "created"})
 }
 
@@ -179,7 +191,7 @@ func (db Database) UpdateTransaction(ctx *gin.Context) {
 	}
 
 	// check values validity
-	if empty_reg.MatchString(transaction.IbanSender) || empty_reg.MatchString(transaction.IbanReceiver) || empty_reg.MatchString(string(transaction.Type)) || empty_reg.MatchString(string(transaction.Status)) || empty_reg.MatchString(transaction.Description) || transaction.Amount == 0 || transaction.Fee == 0 || transaction.ExecutionDate.IsZero() {
+	if empty_reg.MatchString(transaction.IbanSender) || empty_reg.MatchString(transaction.IbanReceiver) || empty_reg.MatchString(string(transaction.Type)) || empty_reg.MatchString(transaction.Description) || transaction.Amount == 0 || transaction.ExecutionDate.IsZero() {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "please complete all fields"})
 		return
 	}
@@ -213,3 +225,5 @@ func (db Database) DeleteTransaction(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "deleted"})
 }
+
+
