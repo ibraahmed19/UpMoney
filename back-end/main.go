@@ -36,8 +36,6 @@ func main() {
 		OrderId:            "123",
 	}
 
-	// yetsab fi base de donnes
-
 	paymentURL, err := paymee.InitiatePayment(client, payment)
 	if err != nil {
 		fmt.Println("Erreur lors de l'initialisation du paiement:", err)

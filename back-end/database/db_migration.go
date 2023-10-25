@@ -28,7 +28,7 @@ func _auto_migrate_tables(db *gorm.DB) {
 	// auto migrate user, role & Bank tables
 	if err := db.AutoMigrate(
 
-		&user.User{},
+		&common.User{},
 		&common1.Role{},
 		// &common1.Bank{},
 		// &bill.Bill{},
@@ -86,7 +86,7 @@ func _create_root_user(db *gorm.DB, enforcer *casbin.Enforcer) {
 	// root
 	var user_id uint
 	root_role := common1.Role{}
-	root_user := user.User{}
+	root_user := common.User{}
 	// default role
 	user_role := common1.Role{}
 
@@ -107,7 +107,7 @@ func _create_root_user(db *gorm.DB, enforcer *casbin.Enforcer) {
 	if check := db.Where("email=?", os.Getenv("DEFAULT_EMAIL")).Find(&root_user); check.RowsAffected == 0 && check.Error == nil {
 
 		// create user
-		db_user := user.User{FirstName: os.Getenv("DEFAULT_FIRSTNAME"), LastName: os.Getenv("DEFAULT_LASTNAME"), Email: os.Getenv("DEFAULT_EMAIL"), Username: os.Getenv("DEFAULT_USERNAME"), Password: os.Getenv("DEFAULT_PASSWORD"), Adress: os.Getenv("DEFAULT_ADRESS"), Country: os.Getenv("DEFAULT_COUNTRY"), City: os.Getenv("DEFAULT_CITY"), ZipCode: uint(5025), Phone: os.Getenv("DEFAULT_PHONE")}
+		db_user := common.User{FirstName: os.Getenv("DEFAULT_FIRSTNAME"), LastName: os.Getenv("DEFAULT_LASTNAME"), Email: os.Getenv("DEFAULT_EMAIL"), Username: os.Getenv("DEFAULT_USERNAME"), Password: os.Getenv("DEFAULT_PASSWORD"), Adress: os.Getenv("DEFAULT_ADRESS"), Country: os.Getenv("DEFAULT_COUNTRY"), City: os.Getenv("DEFAULT_CITY"), ZipCode: uint(5025), Phone: os.Getenv("DEFAULT_PHONE")}
 		user.HashPassword(&db_user.Password)
 
 		if err := db.Create(&db_user).Error; err != nil {

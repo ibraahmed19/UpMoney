@@ -78,12 +78,10 @@ func (db Database) NewTransaction(ctx *gin.Context) {
 		IbanSender:       transaction.IbanSender,
 		IbanReceiver:     transaction.IbanReceiver,
 		Type:             transaction.Type,
-		//Status:           transaction.Status,
-		Amount: transaction.Amount,
-		//Fee:              transaction.Fee,
-		ExecutionDate: transaction.ExecutionDate,
-		Description:   transaction.Description,
-		CreatedBy:     session.UserID,
+		Amount:           transaction.Amount,
+		ExecutionDate:    transaction.ExecutionDate,
+		Description:      transaction.Description,
+		CreatedBy:        session.UserID,
 	}
 	// create new transaction
 	_, err = NewTransaction(db.DB, new_transaction)
@@ -225,5 +223,3 @@ func (db Database) DeleteTransaction(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "deleted"})
 }
-
-

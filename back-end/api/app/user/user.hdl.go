@@ -5,9 +5,11 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	"time"
 
 	common1 "template_rest_api/api/app/common"
 	"template_rest_api/api/app/role"
+	"template_rest_api/api/v1/common"
 	"template_rest_api/middleware"
 
 	"github.com/casbin/casbin/v2"
@@ -24,7 +26,7 @@ type Database struct {
 func (db Database) NewUser(ctx *gin.Context) {
 
 	// init vars
-	var user User
+	var user common.User
 	empty_reg, _ := regexp.Compile(os.Getenv("EMPTY_REGEX"))
 
 	// unmarshal sent json
@@ -64,22 +66,24 @@ func (db Database) NewUser(ctx *gin.Context) {
 	HashPassword(&user.Password)
 
 	// init new user
-	new_user := User{
-		FirstName: user.FirstName,
-		LastName:  user.LastName,
-		Email:     user.Email,
-		Username:  user.Username,
-		Password:  user.Password,
-		Adress:    user.Adress,
-		Country:   user.Country,
-		City:      user.City,
-		ZipCode:   user.ZipCode,
-		Phone:     user.Phone,
-		Roles:     user.Roles,
-		LastLogin: user.LastLogin,
-		// BankID:      session.BankID,
-		// InsuranceID: session.InsuranceID,
-		CreatedBy: session.UserID,
+	new_user := common.User{
+		FirstName:       user.FirstName,
+		LastName:        user.LastName,
+		Email:           user.Email,
+		Username:        user.Username,
+		Password:        user.Password,
+		Adress:          user.Adress,
+		Country:         user.Country,
+		City:            user.City,
+		ZipCode:         user.ZipCode,
+		Phone:           user.Phone,
+		Roles:           user.Roles,
+		LastLogin:       time.Now(),
+		InscriptionDate: time.Now(),
+		BirthDate:       user.BirthDate,
+		Gender:          user.Gender,
+		Profession:      user.Profession,
+		CreatedBy:       session.UserID,
 	}
 
 	roledb, err := role.GetRoleByID(db.DB, user.Roles[0].ID)
@@ -138,7 +142,7 @@ func (db Database) GetUserByID(ctx *gin.Context) {
 func (db Database) SearchUsers(ctx *gin.Context) {
 
 	// init vars
-	var user User
+	var user common.User
 
 	// unmarshal sent json
 	if err := ctx.ShouldBindJSON(&user); err != nil {
@@ -159,7 +163,7 @@ func (db Database) SearchUsers(ctx *gin.Context) {
 func (db Database) UpdateUser(ctx *gin.Context) {
 
 	// init vars
-	var user User
+	var user common.User
 	empty_reg, _ := regexp.Compile(os.Getenv("EMPTY_REGEX"))
 
 	// unmarshal sent json

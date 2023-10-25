@@ -27,10 +27,9 @@ type User struct {
 	Profession      string           `gorm:"column:profession;not null" json:"profession"`
 	BankingAccounts []BankingAccount `gorm:"foreignKey:UserID;references:ID"`
 	Credits         []Credit         `gorm:"foreignKey:UserID;references:ID"`
-	CreatedBy uint `gorm:"column:created_by" json:"created_by"`
+	CreatedBy       uint             `gorm:"column:created_by" json:"created_by"`
 	gorm.Model
 }
-
 
 // check if user exists
 func CheckUserExists(db *gorm.DB, id uint) bool {
@@ -50,4 +49,3 @@ func CheckUserExists(db *gorm.DB, id uint) bool {
 		return true
 	}
 }
-

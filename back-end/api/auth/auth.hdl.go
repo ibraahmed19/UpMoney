@@ -44,18 +44,21 @@ func (db Database) SignUpUser(ctx *gin.Context) {
 	user.HashPassword(&userToInsert.Password)
 
 	// create new user
-	new_user := user.User{
-		FirstName: userToInsert.FirstName,
-		LastName:  userToInsert.LastName,
-		Email:     userToInsert.Email,
-		Username:  userToInsert.Username,
-		Password:  userToInsert.Password,
-		Adress:    userToInsert.Adress,
-		Country:   userToInsert.Country,
-		City:      userToInsert.City,
-		ZipCode:   userToInsert.ZipCode,
-		Phone:     userToInsert.Phone,
-		LastLogin: userToInsert.LastLogin,
+	new_user := common.User{
+		FirstName:       userToInsert.FirstName,
+		LastName:        userToInsert.LastName,
+		Email:           userToInsert.Email,
+		Username:        userToInsert.Username,
+		Password:        userToInsert.Password,
+		Adress:          userToInsert.Adress,
+		Country:         userToInsert.Country,
+		City:            userToInsert.City,
+		ZipCode:         userToInsert.ZipCode,
+		Phone:           userToInsert.Phone,
+		InscriptionDate: time.Now(),
+		BirthDate:       userToInsert.BirthDate,
+		Gender:          userToInsert.Gender,
+		Profession:      userToInsert.Profession,
 	}
 
 	// Définir l'ID du rôle par défaut sur 1
